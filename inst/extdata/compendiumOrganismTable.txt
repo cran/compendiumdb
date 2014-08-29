@@ -1,0 +1,1702 @@
+2@Bacteria@eubacteria
+9@Buchnera aphidicola@NA
+19@Pelobacter carbinolicus@NA
+22@Shewanella@NA
+34@Myxococcus xanthus@NA
+139@Borrelia burgdorferi@Lyme disease spirochete
+140@Borrelia hermsii@NA
+158@Treponema denticola@NA
+173@Leptospira interrogans@NA
+194@Campylobacter@NA
+195@Campylobacter coli@NA
+197@Campylobacter jejuni@NA
+210@Helicobacter pylori@NA
+235@Brucella abortus@NA
+236@Brucella ovis@NA
+262@Francisella@NA
+263@Francisella tularensis@NA
+264@Francisella novicida@NA
+266@Paracoccus denitrificans@NA
+274@Thermus thermophilus@NA
+286@Pseudomonas@NA
+287@Pseudomonas aeruginosa@NA
+294@Pseudomonas fluorescens@NA
+303@Pseudomonas putida@NA
+317@Pseudomonas syringae@NA
+319@Pseudomonas syringae pv. phaseolicola@NA
+337@Burkholderia glumae@NA
+340@Xanthomonas campestris pv. campestris@NA
+347@Xanthomonas oryzae@NA
+374@Bradyrhizobium@NA
+375@Bradyrhizobium japonicum@NA
+379@Rhizobium@NA
+380@Sinorhizobium fredii@NA
+382@Sinorhizobium meliloti@NA
+394@Sinorhizobium fredii NGR234@NA
+425@Methylosinus@NA
+426@Methylosinus trichosporium@NA
+442@Gluconobacter oxydans@NA
+446@Legionella pneumophila@NA
+470@Acinetobacter baumannii@NA
+480@Moraxella catarrhalis@NA
+485@Neisseria gonorrhoeae@NA
+487@Neisseria meningitidis@NA
+520@Bordetella pertussis@NA
+542@Zymomonas mobilis@NA
+552@Erwinia amylovora@NA
+556@Erwinia chrysanthemi@NA
+562@Escherichia coli@NA
+573@Klebsiella pneumoniae@NA
+584@Proteus mirabilis@NA
+590@Salmonella@NA
+620@Shigella@NA
+623@Shigella flexneri@NA
+628@Xenorhabdus nematophila@NA
+632@Yersinia pestis@NA
+633@Yersinia pseudotuberculosis@NA
+654@Aeromonas veronii@NA
+666@Vibrio cholerae@NA
+668@Aliivibrio fischeri@NA
+669@Vibrio harveyi@NA
+670@Vibrio parahaemolyticus@NA
+672@Vibrio vulnificus@NA
+714@Aggregatibacter actinomycetemcomitans@NA
+715@Actinobacillus pleuropneumoniae@NA
+727@Haemophilus influenzae@NA
+731@Histophilus somni@NA
+777@Coxiella burnetii@NA
+779@Ehrlichia ruminantium@heartwater rickettsia
+781@Rickettsia conorii@NA
+782@Rickettsia prowazekii@NA
+783@Rickettsia rickettsii@NA
+784@Orientia tsutsugamushi@NA
+803@Bartonella quintana@NA
+813@Chlamydia trachomatis@NA
+816@Bacteroides@NA
+818@Bacteroides thetaiotaomicron@NA
+821@Bacteroides vulgatus@NA
+823@Parabacteroides distasonis@NA
+837@Porphyromonas gingivalis@NA
+851@Fusobacterium nucleatum@NA
+865@Pectinatus frisingensis@NA
+870@Dichelobacter nodosus@NA
+882@Desulfovibrio vulgaris str. Hildenborough@NA
+914@Nitrosomonas@NA
+915@Nitrosomonas europaea@NA
+945@Ehrlichia chaffeensis@NA
+955@Wolbachia pipientis@NA
+1061@Rhodobacter capsulatus@NA
+1076@Rhodopseudomonas palustris@NA
+1140@Synechococcus elongatus PCC 7942@NA
+1148@Synechocystis sp. PCC 6803@NA
+1163@Anabaena@NA
+1245@Leuconostoc mesenteroides@NA
+1247@Oenococcus oeni@NA
+1254@Pediococcus acidilactici@NA
+1255@Pediococcus pentosaceus@NA
+1263@Ruminococcus@NA
+1280@Staphylococcus aureus@NA
+1282@Staphylococcus epidermidis@NA
+1299@Deinococcus radiodurans@NA
+1302@Streptococcus gordonii@NA
+1305@Streptococcus sanguinis@NA
+1307@Streptococcus suis@NA
+1308@Streptococcus thermophilus@NA
+1309@Streptococcus mutans@NA
+1311@Streptococcus agalactiae@NA
+1313@Streptococcus pneumoniae@NA
+1314@Streptococcus pyogenes@NA
+1349@Streptococcus uberis@NA
+1351@Enterococcus faecalis@NA
+1352@Enterococcus faecium@NA
+1354@Enterococcus hirae@NA
+1358@Lactococcus lactis@NA
+1360@Lactococcus lactis subsp. lactis@NA
+1363@Lactococcus garvieae@NA
+1392@Bacillus anthracis@NA
+1396@Bacillus cereus@NA
+1423@Bacillus subtilis@NA
+1428@Bacillus thuringiensis@NA
+1471@Bacillus methanolicus@NA
+1488@Clostridium acetobutylicum@NA
+1491@Clostridium botulinum@NA
+1496@[Clostridium] difficile@NA
+1502@Clostridium perfringens@NA
+1512@Clostridium symbiosum@NA
+1515@Clostridium thermocellum@NA
+1578@Lactobacillus@NA
+1579@Lactobacillus acidophilus@NA
+1580@Lactobacillus brevis@NA
+1582@Lactobacillus casei@NA
+1584@Lactobacillus delbrueckii@NA
+1585@Lactobacillus delbrueckii subsp. bulgaricus@NA
+1587@Lactobacillus helveticus@NA
+1590@Lactobacillus plantarum@NA
+1597@Lactobacillus paracasei@NA
+1598@Lactobacillus reuteri@NA
+1610@Lactobacillus coryniformis@NA
+1623@Lactobacillus ruminis@NA
+1639@Listeria monocytogenes@NA
+1642@Listeria innocua@NA
+1678@Bifidobacterium@NA
+1685@Bifidobacterium breve@NA
+1718@Corynebacterium glutamicum@NA
+1744@Propionibacterium freudenreichii@NA
+1763@Mycobacterium@NA
+1764@Mycobacterium avium@NA
+1765@Mycobacterium bovis@NA
+1769@Mycobacterium leprae@NA
+1770@Mycobacterium avium subsp. paratuberculosis@NA
+1772@Mycobacterium smegmatis@NA
+1773@Mycobacterium tuberculosis@NA
+1781@Mycobacterium marinum@NA
+1836@Saccharopolyspora erythraea@NA
+1901@Streptomyces clavuligerus@NA
+1902@Streptomyces coelicolor@NA
+1911@Streptomyces griseus@NA
+1930@Streptomyces scabiei@NA
+2039@Tropheryma whipplei@NA
+2097@Mycoplasma genitalium@NA
+2099@Mycoplasma hyopneumoniae@NA
+2157@Archaea@NA
+2173@Methanobrevibacter smithii@NA
+2190@Methanocaldococcus jannaschii@NA
+2246@Haloferax volcanii@NA
+2252@Haloferax mediterranei@NA
+2261@Pyrococcus furiosus@NA
+2287@Sulfolobus solfataricus@NA
+2336@Thermotoga maritima@NA
+2337@Thermotoga neapolitana@NA
+2371@Xylella fastidiosa@NA
+2706@Citrus@NA
+2711@Citrus sinensis@sweet orange
+2759@Eukaryota@eucaryotes
+2776@Gracilaria tenuistipitata@NA
+2788@Pyropia yezoensis@susabi-nori
+2836@Bacillariophyta@diatoms
+2842@Skeletonema@NA
+2850@Phaeodactylum tricornutum@NA
+2880@Ectocarpus siliculosus@NA
+2903@Emiliania huxleyi@NA
+3041@Chlorophyta@green algae
+3046@Dunaliella salina@NA
+3047@Dunaliella tertiolecta@NA
+3052@Chlamydomonas@NA
+3054@Chlamydomonas moewusii@NA
+3055@Chlamydomonas reinhardtii@NA
+3067@Volvox carteri@NA
+3072@Pseudochlorella pringsheimii@NA
+3078@Chlorella pyrenoidosa@NA
+3088@Acutodesmus obliquus@NA
+3218@Physcomitrella patens@NA
+3311@Ginkgo biloba@maidenhair tree
+3328@Picea@NA
+3329@Picea abies@Norway spruce
+3330@Picea glauca@white spruce
+3332@Picea sitchensis@Sitka spruce
+3347@Pinus radiata@Monterey pine
+3349@Pinus sylvestris@Scots pine
+3352@Pinus taeda@loblolly pine
+3357@Pseudotsuga menziesii@Douglas-fir
+3369@Cryptomeria japonica@Japanese cedar
+3415@Liriodendron tulipifera@NA
+3435@Persea americana@avocado
+3467@Eschscholzia californica@California poppy
+3469@Papaver somniferum@opium poppy
+3486@Humulus lupulus@European hop
+3505@Betula pendula@European white birch
+3513@Quercus alba@white oak
+3517@Alnus glutinosa@NA
+3522@Casuarina glauca@swamp oak
+3617@Fagopyrum esculentum@common buckwheat
+3633@Gossypium@NA
+3634@Gossypium barbadense@sea-island cotton
+3635@Gossypium hirsutum@upland cotton
+3641@Theobroma cacao@cacao
+3649@Carica papaya@papaya
+3654@Citrullus lanatus@NA
+3656@Cucumis melo@muskmelon
+3659@Cucumis sativus@cucumber
+3661@Cucurbita maxima@winter squash
+3662@Cucurbita moschata@crookneck pumpkin
+3663@Cucurbita pepo@NA
+3668@Lagenaria siceraria@white-flowered gourd
+3689@Populus@poplars
+3693@Populus tremuloides@quaking aspen
+3694@Populus trichocarpa@black cottonwood
+3695@Populus trichocarpa x Populus deltoides@NA
+3697@Populus sp.@NA
+3702@Arabidopsis thaliana@thale cress
+3705@Brassica@NA
+3707@Brassica juncea@NA
+3708@Brassica napus@rape
+3710@Brassica nigra@black mustard
+3711@Brassica rapa@field mustard
+3712@Brassica oleracea@NA
+3716@Brassica oleracea var. capitata@cabbage
+3719@Capsella bursa-pastoris@shepherd's purse
+3747@Fragaria x ananassa@strawberry
+3750@Malus domestica@apple
+3760@Prunus persica@peach
+3764@Rosa@NA
+3767@Pyrus pyrifolia@NA
+3818@Arachis hypogaea@peanut
+3827@Cicer arietinum@chickpea
+3847@Glycine max@soybean
+3848@Glycine soja@NA
+3860@Lathyrus sativus@NA
+3864@Lens culinaris@lentil
+3870@Lupinus albus@white lupine
+3873@Lupinus luteus@yellow lupine
+3877@Medicago@medics
+3879@Medicago sativa@NA
+3880@Medicago truncatula@barrel medic
+3885@Phaseolus vulgaris@NA
+3888@Pisum sativum@pea
+3908@Vicia sativa@NA
+3911@Vicia villosa@hairy vetch
+3917@Vigna unguiculata@cowpea
+3932@Eucalyptus@NA
+3981@Hevea brasiliensis@NA
+3983@Manihot esculenta@cassava
+3988@Ricinus communis@castor bean
+3993@Euphorbia esula@leafy spurge
+4006@Linum usitatissimum@flax
+4026@Acer pseudoplatanus@sycamore maple
+4072@Capsicum annuum@NA
+4081@Solanum lycopersicum@tomato
+4084@Solanum pimpinellifolium@NA
+4097@Nicotiana tabacum@common tobacco
+4100@Nicotiana benthamiana@NA
+4102@Petunia x hybrida@NA
+4108@Solanum chacoense@Chaco potato
+4111@Solanum melongena@eggplant
+4113@Solanum tuberosum@potato
+4120@Ipomoea batatas@sweet potato
+4146@Olea europaea@common olive
+4151@Antirrhinum majus@snapdragon
+4155@Mimulus guttatus@spotted monkey flower
+4222@Carthamus tinctorius@safflower
+4224@Flaveria bidentis@NA
+4226@Flaveria pringlei@NA
+4227@Flaveria trinervia@NA
+4232@Helianthus annuus@common sunflower
+4236@Lactuca sativa@NA
+4442@Camellia sinensis@NA
+4513@Hordeum vulgare@NA
+4522@Lolium perenne@NA
+4529@Oryza rufipogon@NA
+4530@Oryza sativa@rice
+4536@Oryza nivara@NA
+4538@Oryza glaberrima@African rice
+4543@Cenchrus americanus@NA
+4547@Saccharum officinarum@NA
+4555@Setaria italica@foxtail millet
+4558@Sorghum bicolor@sorghum
+4565@Triticum aestivum@bread wheat
+4567@Triticum durum@durum wheat
+4577@Zea mays@NA
+4615@Ananas comosus@pineapple
+4641@Musa acuminata@dwarf banana
+4679@Allium cepa@onion
+4690@Lilium longiflorum@trumpet lily
+4751@Fungi@fungi
+4787@Phytophthora infestans@potato late blight agent
+4808@Blastocladiella emersonii@NA
+4837@Phycomyces blakesleeanus@NA
+4839@Rhizomucor miehei@Mucor miehei
+4876@Rhizophagus intraradices@NA
+4896@Schizosaccharomyces pombe@fission yeast
+4897@Schizosaccharomyces japonicus@NA
+4899@Schizosaccharomyces octosporus@NA
+4903@Cyberlindnera jadinii@NA
+4914@Lachancea waltii@NA
+4922@Komagataella pastoris@NA
+4931@Saccharomyces bayanus@NA
+4932@Saccharomyces cerevisiae@baker's yeast
+4934@Lachancea kluyveri@NA
+4952@Yarrowia lipolytica@NA
+4959@Debaryomyces hansenii@NA
+5022@Leptosphaeria maculans@blackleg of rapeseed fungus
+5037@Ajellomyces capsulatus@NA
+5052@Aspergillus@NA
+5057@Aspergillus clavatus@NA
+5059@Aspergillus flavus@NA
+5061@Aspergillus niger@NA
+5062@Aspergillus oryzae@NA
+5073@Penicillium@NA
+5076@Penicillium chrysogenum@NA
+5116@Cryphonectria parasitica@chestnut blight fungus
+5127@Fusarium fujikuroi@NA
+5141@Neurospora crassa@NA
+5145@Podospora anserina@NA
+5147@Sordaria macrospora@NA
+5180@Sclerotinia sclerotiorum@NA
+5207@Cryptococcus neoformans@NA
+5270@Ustilago maydis@NA
+5286@Rhodosporidium toruloides@NA
+5306@Phanerochaete chrysosporium@NA
+5308@Phlebia radiata@NA
+5322@Pleurotus ostreatus@oyster mushroom
+5323@Pleurotus eryngii@NA
+5325@Trametes versicolor@NA
+5334@Schizophyllum commune@NA
+5341@Agaricus bisporus@NA
+5346@Coprinopsis cinerea@NA
+5353@Lentinula edodes@shiitake mushroom
+5465@Colletotrichum orbiculare@NA
+5476@Candida albicans@NA
+5478@Candida glabrata@NA
+5480@Candida parapsilosis@NA
+5482@Candida tropicalis@NA
+5506@Fusarium@NA
+5507@Fusarium oxysporum@NA
+5514@Fusarium sporotrichioides@NA
+5515@Fusarium acuminatum@NA
+5518@Fusarium graminearum@NA
+5530@Metarhizium anisopliae@NA
+5544@Trichoderma harzianum@NA
+5551@Trichophyton rubrum@NA
+5599@Alternaria alternata@NA
+5643@Trametes cinnabarina@NA
+5659@Leishmania amazonensis@NA
+5661@Leishmania donovani@NA
+5664@Leishmania major@NA
+5671@Leishmania infantum@NA
+5689@Leishmania tarentolae@NA
+5691@Trypanosoma brucei@NA
+5693@Trypanosoma cruzi@NA
+5699@Trypanosoma vivax@NA
+5702@Trypanosoma brucei brucei@NA
+5722@Trichomonas vaginalis@NA
+5741@Giardia intestinalis@NA
+5759@Entamoeba histolytica@NA
+5762@Naegleria gruberi@NA
+5786@Dictyostelium purpureum@NA
+5791@Physarum polycephalum@NA
+5807@Cryptosporidium parvum@NA
+5811@Toxoplasma gondii@NA
+5821@Plasmodium berghei@NA
+5823@Plasmodium berghei ANKA@NA
+5833@Plasmodium falciparum@malaria parasite P. falciparum
+5843@Plasmodium falciparum NF54@NA
+5855@Plasmodium vivax@malaria parasite P. vivax
+5861@Plasmodium yoelii@NA
+5865@Babesia bovis@NA
+5874@Theileria annulata@NA
+5888@Paramecium tetraurelia@NA
+5911@Tetrahymena thermophila@NA
+5932@Ichthyophthirius multifiliis@NA
+5970@Exophiala dermatitidis@NA
+6087@Hydra vulgaris@NA
+6110@Anthopleura elegantissima@clonal anemone
+6131@Acropora palmata@NA
+6161@Dugesia japonica@NA
+6182@Schistosoma japonicum@NA
+6183@Schistosoma mansoni@NA
+6210@Echinococcus granulosus@NA
+6233@Panagrellus redivivus@NA
+6238@Caenorhabditis briggsae@NA
+6239@Caenorhabditis elegans@NA
+6248@Strongyloides stercoralis@NA
+6253@Ascaris suum@pig roundworm
+6279@Brugia malayi@NA
+6280@Brugia pahangi@NA
+6282@Onchocerca volvulus@NA
+6287@Dirofilaria immitis@dog heartworm nematode
+6289@Haemonchus contortus@barber pole worm
+6293@Wuchereria bancrofti@NA
+6306@Meloidogyne incognita@southern root-knot nematode
+6326@Bursaphelenchus xylophilus@pine wood nematode
+6334@Trichinella spiralis@NA
+6390@Enchytraeus albidus@NA
+6396@Eisenia fetida@common brandling worm
+6421@Hirudo medicinalis@medicinal leech
+6500@Aplysia californica@California sea hare
+6526@Biomphalaria glabrata@NA
+6549@Mytilus californianus@California mussel
+6565@Crassostrea virginica@eastern oyster
+6613@Euprymna scolopes@NA
+6669@Daphnia pulex@common water flea
+6687@Penaeus monodon@black tiger shrimp
+6689@Litopenaeus vannamei@Pacific white shrimp
+6703@Pandalus borealis@northern shrimp
+6706@Homarus americanus@American lobster
+6759@Carcinus maenas@green crab
+6819@Euphausia superba@NA
+6832@Tigriopus californicus@NA
+6837@Calanus finmarchicus@NA
+6941@Rhipicephalus microplus@southern cattle tick
+6943@Amblyomma americanum@Lone Star tick
+6945@Ixodes scapularis@black-legged tick
+6956@Dermatophagoides pteronyssinus@European house dust mite
+6973@Blattella germanica@German cockroach
+7004@Locusta migratoria@migratory locust
+7010@Schistocerca gregaria@NA
+7029@Acyrthosiphon pisum@pea aphid
+7038@Bemisia tabaci@NA
+7070@Tribolium castaneum@red flour beetle
+7091@Bombyx mori@domestic silkworm
+7107@Spodoptera exigua@beet armyworm
+7108@Spodoptera frugiperda@fall armyworm
+7111@Trichoplusia ni@cabbage looper
+7113@Helicoverpa zea@corn earworm
+7130@Manduca sexta@tobacco hornworm
+7153@Chironomus tentans@NA
+7159@Aedes aegypti@yellow fever mosquito
+7160@Aedes albopictus@Asian tiger mosquito
+7165@Anopheles gambiae@African malaria mosquito
+7176@Culex quinquefasciatus@southern house mosquito
+7213@Ceratitis capitata@Mediterranean fruit fly
+7215@Drosophila@fruit flies
+7217@Drosophila ananassae@NA
+7220@Drosophila erecta@NA
+7226@Drosophila mauritiana@NA
+7227@Drosophila melanogaster@fruit fly
+7229@Drosophila miranda@NA
+7230@Drosophila mojavensis@NA
+7237@Drosophila pseudoobscura@NA
+7238@Drosophila sechellia@NA
+7240@Drosophila simulans@NA
+7244@Drosophila virilis@NA
+7245@Drosophila yakuba@NA
+7260@Drosophila willistoni@NA
+7274@Drosophila serrata@NA
+7368@Haematobia irritans@horn fly
+7370@Musca domestica@house fly
+7425@Nasonia vitripennis@jewel wasp
+7460@Apis mellifera@honey bee
+7668@Strongylocentrotus purpuratus@purple sea urchin
+7719@Ciona intestinalis@vase tunicate
+7741@Branchiostoma belcheri@Belcher's lancelet
+7757@Petromyzon marinus@sea lamprey
+7782@Leucoraja erinacea@little skate
+7830@Scyliorhinus canicula@smaller spotted catshark
+7868@Callorhinchus milii@elephant shark
+7936@Anguilla anguilla@European eel
+7955@Danio rerio@zebrafish
+7957@Carassius auratus@goldfish
+7962@Cyprinus carpio@common carp
+7965@Hypophthalmichthys nobilis@bighead carp
+7998@Ictalurus punctatus@channel catfish
+8014@Osmerus mordax@rainbow smelt
+8022@Oncorhynchus mykiss@rainbow trout
+8030@Salmo salar@Atlantic salmon
+8032@Salmo trutta@brown trout
+8049@Gadus morhua@Atlantic cod
+8078@Fundulus heteroclitus@mummichog
+8090@Oryzias latipes@Japanese medaka
+8098@Cottus@NA
+8153@Haplochromis burtoni@Burton's mouthbrooder
+8164@Lateolabrax japonicus@NA
+8167@Perca flavescens@yellow perch
+8175@Sparus aurata@gilthead seabream
+8187@Lates calcarifer@barramundi perch
+8222@Gillichthys mirabilis@long-jawed mudsucker
+8237@Thunnus thynnus@Atlantic bluefin guna
+8255@Paralichthys olivaceus@Japanese flounder
+8265@Pseudopleuronectes americanus@winter flounder
+8267@Hippoglossus hippoglossus@Atlantic halibut
+8296@Ambystoma mexicanum@axolotl
+8316@Notophthalmus viridescens@eastern newt
+8352@Pipidae@tongueless frogs
+8355@Xenopus laevis@African clawed frog
+8364@Xenopus (Silurana) tropicalis@western clawed frog
+8386@Rhinella marina@marine toad
+8400@Rana catesbeiana@bullfrog
+8404@Rana pipiens@northern leopard frog
+8730@Crotalus atrox@western diamondback rattlesnake
+8839@Anas platyrhynchos@mallard
+8932@Columba livia@rock pigeon
+9014@Colinus virginianus@northern bobwhite
+9031@Gallus gallus@chicken
+9103@Meleagris gallopavo@turkey
+9258@Ornithorhynchus anatinus@platypus
+9261@Tachyglossus aculeatus@Australian echidna
+9267@Didelphis virginiana@North American opossum
+9305@Sarcophilus harrisii@Tasmanian devil
+9315@Macropus eugenii@tammar wallaby
+9361@Dasypus novemcinctus@nine-banded armadillo
+9365@Erinaceus europaeus@western European hedgehog
+9368@Atelerix albiventris@middle-African hedgehog
+9378@Suncus murinus@house shrew
+9400@Cynopterus sphinx@Indian short-nosed fruit bat
+9402@Pteropus alecto@black flying fox
+9408@Rousettus leschenaultii@Leschenault's rousette
+9430@Desmodus rotundus@common vampire bat
+9433@Miniopterus schreibersii@Schreibers' long-fingered bat
+9438@Tadarida brasiliensis@Brazilian free-tailed bat
+9443@Primates@NA
+9447@Lemur catta@Ring-tailed lemur
+9483@Callithrix jacchus@white-tufted-ear marmoset
+9491@Saguinus imperator@tamarin
+9509@Ateles geoffroyi@black-handed spider monkey
+9511@Ateles sp.@spider monkey
+9518@Lagothrix@woolly monkeys
+9519@Lagothrix lagotricha@brown woolly monkey
+9534@Chlorocebus aethiops@grivet
+9541@Macaca fascicularis@crab-eating macaque
+9544@Macaca mulatta@Rhesus monkey
+9545@Macaca nemestrina@pig-tailed macaque
+9557@Papio hamadryas@hamadryas baboon
+9590@Symphalangus syndactylus@siamang
+9593@Gorilla gorilla@western gorilla
+9597@Pan paniscus@pygmy chimpanzee
+9598@Pan troglodytes@chimpanzee
+9599@Pongo@NA
+9600@Pongo pygmaeus@Bornean orangutan
+9601@Pongo abelii@Sumatran orangutan
+9606@Homo sapiens@human
+9615@Canis lupus familiaris@dog
+9643@Ursus americanus@American black bear
+9662@Meles meles@Eurasian badger
+9669@Mustela putorius furo@domestic ferret
+9685@Felis catus@domestic cat
+9739@Tursiops truncatus@bottlenosed dolphin
+9785@Loxodonta africana@African savanna elephant
+9793@Equus asinus@ass
+9796@Equus caballus@horse
+9822@Sus@NA
+9823@Sus scrofa@pig
+9825@Sus scrofa domesticus@domestic pig
+9909@Bos primigenius@aurochs
+9913@Bos taurus@cattle
+9915@Bos indicus@NA
+9925@Capra hircus@goat
+9940@Ovis aries@sheep
+9986@Oryctolagus cuniculus@rabbit
+9995@Marmota monax@woodchuck
+9999@Urocitellus parryii@Arctic ground squirrel
+10029@Cricetulus griseus@Chinese hamster
+10036@Mesocricetus auratus@golden hamster
+10041@Peromyscus leucopus@white-footed mouse
+10044@Phodopus sungorus@NA
+10047@Meriones unguiculatus@Mongolian gerbil
+10068@Acomys cahirinus@Egyptian spiny mouse
+10090@Mus musculus@house mouse
+10091@Mus musculus castaneus@southeastern Asian house mouse
+10092@Mus musculus domesticus@western European house mouse
+10096@Mus spretus@western wild mouse
+10116@Rattus norvegicus@Norway rat
+10141@Cavia porcellus@domestic guinea pig
+10181@Heterocephalus glaber@naked mole-rat
+10228@Trichoplax adhaerens@NA
+10239@Viruses@NA
+10244@Monkeypox virus@NA
+10245@Vaccinia virus@NA
+10254@Vaccinia virus WR@NA
+10255@Variola virus@NA
+10291@unidentified entomopoxvirus@NA
+10298@Human herpesvirus 1@Herpes simplex virus type 1
+10310@Human herpesvirus 2@NA
+10325@Macacine herpesvirus 1@NA
+10358@Cytomegalovirus@NA
+10359@Human herpesvirus 5@Human cytomegalovirus
+10366@Murid herpesvirus 1@Murine cytomegalovirus
+10375@Lymphocryptovirus@NA
+10376@Human herpesvirus 4@Epstein-Barr virus
+10377@Human herpesvirus 4 (strain B95-8)@Epstein-Barr virus (strain B95-8)
+10379@Rhadinovirus@NA
+10381@Saimiriine herpesvirus 2@Herpesvirus saimiri
+10383@Herpesvirus saimiri (strain 11)@NA
+10390@Gallid herpesvirus 2@NA
+10398@Ovine herpesvirus 2@NA
+10469@unidentified baculovirus@NA
+10487@Iridovirus@small iridescent insect viruses
+10493@Frog virus 3@NA
+10506@Paramecium bursaria Chlorella virus 1@NA
+10629@BK polyomavirus@NA
+10632@JC polyomavirus@NA
+10633@Simian virus 40@NA
+10665@Enterobacteria phage T4@NA
+10710@Enterobacteria phage lambda@NA
+10806@Densovirus@NA
+10832@Tomato yellow leaf curl virus@NA
+10981@Cypovirus@cytoplasmic polyhedrosis viruses
+10993@Birnaviridae@NA
+11018@Togaviridae@NA
+11050@Flaviviridae@NA
+11103@Hepatitis C virus@NA
+11137@Human coronavirus 229E@NA
+11266@Filoviridae@NA
+11320@Influenza A virus@NA
+11520@Influenza B virus@NA
+11571@Bunyaviridae@NA
+11611@Tospovirus@NA
+11617@Arenaviridae@NA
+11676@Human immunodeficiency virus 1@NA
+11987@Melon necrotic spot virus@NA
+12022@Enterobacterio phage MS2@NA
+12036@Luteovirus@NA
+12080@Human poliovirus 1@NA
+12092@Hepatitis A virus@NA
+12137@Sobemovirus@NA
+12144@Cymbidium ringspot virus@NA
+12163@Carlavirus@NA
+12174@Capillovirus@NA
+12176@Potexvirus@NA
+12183@Potato virus X@NA
+12195@Potyvirus@NA
+12230@Turnip mosaic virus@NA
+12234@Tobamovirus@NA
+12239@Pepper mild mottle virus@NA
+12258@Comovirus@NA
+12270@Nepovirus@NA
+12285@Black beetle virus@NA
+12287@Flock house virus@NA
+12293@Tobravirus@NA
+12295@Tobacco rattle virus@NA
+12304@Cucumovirus@NA
+12305@Cucumber mosaic virus@cucumber mosaic cucumovirus
+12307@Cucumber mosaic virus (strain FNY)@NA
+12316@Ilarvirus@NA
+12429@unclassified viruses@NA
+13037@Danaus plexippus@monarch butterfly
+13095@Hypophthalmichthys molitrix@silver carp
+13164@Myzus persicae@green peach aphid
+13333@Amborella trichopoda@NA
+13373@Burkholderia mallei@NA
+13427@Cichorium intybus@chicory
+13443@Coffea arabica@coffee
+13451@Corylus avellana@NA
+13489@Dicentrarchus labrax@European seabass
+13563@Heterobasidion annosum@NA
+13616@Monodelphis domestica@gray short-tailed opossum
+13642@Polysphondylium pallidum@NA
+13686@Solenopsis invicta@red fire ant
+13689@Sphingomonas paucimobilis@NA
+13816@Marsilea quadrifolia@European water clover
+15367@Brachypodium@false bromes
+15368@Brachypodium distachyon@NA
+15819@Saccharum sp.@NA
+21880@Salvia@sages
+23110@Hydrangea macrophylla@NA
+23211@Pyrus communis@pear
+27288@Naumovozyma castellii@NA
+27291@Saccharomyces paradoxus@NA
+27334@Penicillium expansum@NA
+27337@Verticillium dahliae@NA
+27406@Cherax quadricarinatus@NA
+27457@Bactrocera dorsalis@oriental fruit fly
+27606@Eubalaena glacialis@North Atlantic right whale
+27706@Micropterus salmoides@largemouth bass
+27771@Limanda limanda@common dab
+28025@Bifidobacterium animalis@NA
+28197@Arcobacter butzleri@NA
+28227@Mycoplasma penetrans@NA
+28231@Geobacter@NA
+28232@Geobacter metallireducens@NA
+28358@Corynebacterium phage BFK20@NA
+28377@Anolis carolinensis@green anole
+28450@Burkholderia pseudomallei@NA
+28526@Solanum pennellii@NA
+28532@Cleome hassleriana@NA
+28573@Talaromyces islandicus@NA
+28610@Rhagoletis pomonella@apple maggot
+28829@Solea senegalensis@Senegalese sole
+28841@Moniezia expansa@sheep tapeworm
+28901@Salmonella enterica@NA
+28930@Fagus sylvatica@European beech
+28977@Cunninghamia lanceolata@NA
+28985@Kluyveromyces lactis@NA
+29001@Alternaria brassicicola@NA
+29019@Litopenaeus stylirostris@blue shrimp
+29029@Drosophila eugracilis@NA
+29030@Drosophila takahashii@NA
+29058@Helicoverpa armigera@cotton bollworm
+29078@Eptesicus fuscus@big brown bat
+29158@Mytilus galloprovincialis@Mediterranean mussel
+29159@Crassostrea gigas@Pacific oyster
+29170@Ancylostoma caninum@dog hookworm
+29176@Neospora caninum@NA
+29281@uncultured crenarchaeote@NA
+29292@Pyrococcus abyssi@NA
+29390@Streptococcus gordonii str. Challis@NA
+29449@Rhizobium etli@NA
+29459@Brucella melitensis@NA
+29461@Brucella suis@NA
+29471@Pectobacterium atrosepticum@NA
+29655@Zostera marina@NA
+29717@Flaveria cronquistii@NA
+29729@Gossypium arboreum@NA
+29730@Gossypium raimondii@NA
+29753@Vicia pannonica@NA
+29760@Vitis vinifera@wine grape
+29808@Taxus wallichiana var. chinensis@NA
+29875@Trichoderma virens@NA
+29883@Laccaria bicolor@NA
+30023@Drosophila elegans@NA
+30025@Drosophila ficusphila@NA
+30033@Drosophila kikkawai@NA
+30427@Carpodacus mexicanus@house finch
+30521@Bos grunniens@domestic yak
+30637@Nannospalax ehrenbergi@Ehrenberg's mole-rat
+30732@Oryzias melastigma@Indian medaka
+31033@Takifugu rubripes@torafugu
+31192@Holothuria glaberrima@NA
+31234@Caenorhabditis remanei@NA
+31271@Plasmodium chabaudi chabaudi@NA
+31285@Trypanosoma brucei gambiense@NA
+31537@Lactococcus phage c2@NA
+31646@Hepatitis C virus subtype 1a@NA
+32025@Helicobacter hepaticus@NA
+32049@Synechococcus sp. PCC 7002@NA
+32051@Synechococcus sp. WH 7803@NA
+32264@Tetranychus urticae@two-spotted spider mite
+32604@Human herpesvirus 6B@NA
+32630@synthetic construct@NA
+32644@unidentified@NA
+33057@Thauera@NA
+33085@Entamoeba invadens@NA
+33090@Viridiplantae@NA
+33111@Flaveria brownii@NA
+33119@Petunia axillaris@NA
+33129@Phaseolus acutifolius@tepary bean
+33188@Uncinocarpus reesii@NA
+33640@Asterionellopsis glacialis@NA
+33708@Murid herpesvirus 4@Murine herpesvirus 68
+33892@Mycobacterium bovis BCG@NA
+33903@Streptomyces avermitilis@NA
+33959@Lactobacillus johnsonii@NA
+34305@Lotus japonicus@NA
+34316@Eucalyptus camaldulensis@Murray red gum
+34506@Strongyloides ratti@NA
+34620@Dermacentor andersoni@NA
+34765@Oikopleura dioica@NA
+34816@Morone saxatilis@striped sea-bass
+34899@Petaurus breviceps@sugar glider
+35127@Thalassiosira@NA
+35128@Thalassiosira pseudonana@NA
+35241@Lactococcus phage Tuc2009@NA
+35252@Alcelaphine herpesvirus 1@wildebeest herpesvirus
+35525@Daphnia magna@NA
+35554@Geobacter sulfurreducens@NA
+35720@Thielavia terrestris@NA
+35879@Flaveria palmeri@NA
+35880@Flaveria pubescens@NA
+36033@Vanderwaltozyma polyspora@NA
+36080@Mucor circinelloides@NA
+36329@Plasmodium falciparum 3D7@NA
+36470@Streptococcus sp. 'group A'@NA
+36596@Prunus armeniaca@apricot
+36659@Volvariella volvacea@NA
+36774@Brassica oleracea var. italica@NA
+36809@Mycobacterium abscessus@NA
+36853@Desulfitobacterium@NA
+37273@Gambusia holbrooki@eastern nosquitofish
+37296@Human herpesvirus 8@NA
+37307@Cylindrocystis sp. UTEX 1925@NA
+37319@Pseudo-nitzschia multiseries@NA
+37334@Citrus maxima@NA
+37657@Silene latifolia@NA
+37682@Aegilops tauschii@NA
+37690@Citrus trifoliata@NA
+37727@Talaromyces marneffei@NA
+37862@Heterorhabditis bacteriophora@NA
+37919@Rhodococcus opacus@NA
+38033@Chaetomium globosum@NA
+38323@Bartonella henselae@NA
+38588@Syntrichia ruralis@NA
+38727@Panicum virgatum@switchgrass
+38785@Arabidopsis arenosa@NA
+38833@Micromonas pusilla@NA
+38865@Quercus petraea@sessile oak
+38873@Fraxinus excelsior@European ash
+38942@Quercus robur@NA
+39029@Megasphaera cerevisiae@NA
+39152@Methanococcus maripaludis@NA
+39251@Paulownia@NA
+39291@Athelia rolfsii@NA
+39416@Tuber melanosporum@Perigord truffle
+39442@Mus musculus musculus@eastern European house mouse
+39485@Eubacterium eligens@NA
+39491@Eubacterium rectale@NA
+39758@Mayetiola destructor@Hessian fly
+39765@Thiomicrospira crunogena@NA
+39946@Oryza sativa Indica Group@long-grained rice
+39947@Oryza sativa Japonica Group@Japanese rice
+39984@Bruguiera gymnorhiza@NA
+40217@Junco hyemalis@dark-eyed junco
+40269@Aliivibrio salmonicida@NA
+40324@Stenotrophomonas maltophilia@NA
+40370@Drosophila montana@NA
+40410@Cryptococcus neoformans var. neoformans@NA
+40559@Botryotinia fuckeliana@NA
+41953@Pseudo-nitzschia@NA
+42026@Drosophila bipectinata@NA
+42043@Silene vulgaris@bladder campion
+42197@Actinosynnema pretiosum@NA
+42374@Candida dubliniensis@NA
+42742@Ceriporiopsis subvermispora@NA
+43151@Anopheles darlingi@NA
+43179@Ictidomys tridecemlineatus@thirteen-lined ground squirrel
+43364@Aesculus hippocastanum@common horse chestnut
+43680@Ascovirus@NA
+43687@Metallosphaera sedula@NA
+43696@Chara corallina@NA
+43700@Monopterus albus@swamp eel
+43989@Cyanothece sp. ATCC 51142@NA
+44001@Caldicellulosiruptor saccharolyticus@NA
+44056@Aureococcus anophagefferens@NA
+44271@Leishmania chagasi@NA
+44275@Leptospira interrogans serovar Copenhageni@NA
+44454@Mycobacterium avium subsp. avium@NA
+44557@uncultured crenarchaeote 4B7@NA
+44689@Dictyostelium discoideum@NA
+44745@Haematococcus pluvialis@NA
+45157@Cyanidioschyzon merolae@NA
+45249@Arabidopsis suecica@NA
+45264@Acropora millepora@NA
+45322@Tragopogon dubius@NA
+45351@Nematostella vectensis@starlet sea anemone
+45455@Macacine herpesvirus 4@Rhesus lymphocryptovirus
+45629@Desulfovibrio halophilus@NA
+45954@Dreissena polymorpha@NA
+47929@Macacine herpesvirus 3@Rhesus cytomegalovirus
+48105@Bupleurum scorzonerifolium@NA
+48416@Zoarces viviparus@viviparous blenny
+48498@Montastraea faveolata@NA
+48709@Orchesella cincta@NA
+49266@Fucus vesiculosus@NA
+49390@Coffea canephora@NA
+49451@Nicotiana attenuata@NA
+50023@Panonychus citri@citrus red mite
+50452@Arabis alpina@gray rockcress
+50591@Lithognathus mormyrus@sand steenbras
+51350@Brassica rapa subsp. rapa@turnip
+51351@Brassica rapa subsp. pekinensis@Chinese cabbage
+51453@Trichoderma reesei@NA
+51589@Haloarcula hispanica@NA
+51655@Plutella xylostella@diamondback moth
+51663@Pediococcus damnosus@NA
+51751@Python regius@NA
+51769@Anemonia viridis@NA
+52451@Bupleurum chinense@NA
+52518@Eustoma exaltatum subsp. russellianum@NA
+52598@Sulfitobacter sp. EE-36@NA
+52670@Austrofundulus limnaeus@NA
+52824@Brassica carinata@NA
+52904@Scophthalmus maximus@turbot
+54126@Pristionchus pacificus@NA
+54319@Etheostoma caeruleum@rainbow darter
+54571@Streptomyces venezuelae@NA
+54800@Larix kaempferi@NA
+55208@Pectobacterium wasabiae@NA
+55429@Megathura crenulata@NA
+56112@Dehalobacter@NA
+56216@Neotoma lepida@desert woodrat
+56615@Puccinia graminis f. sp. tritici@NA
+57665@Sulfurospirillum@NA
+57723@Acidobacteria@NA
+57918@Fragaria vesca@wild strawberry
+57975@Burkholderia thailandensis@NA
+58031@Cycas rumphii@NA
+58065@Eonycteris spelaea@lesser dawn bat
+58923@Bambusa oldhamii@NA
+59201@Salmonella enterica subsp. enterica@NA
+59312@Sarcophaga crassipalpis@NA
+59477@Rhinolophus affinis@intermediate horseshoe bat
+59689@Arabidopsis lyrata@NA
+59729@Taeniopygia guttata@zebra finch
+59786@Brachiaria@NA
+59861@Coregonus clupeaformis@lake whitefish
+59919@Prochlorococcus marinus subsp. pastoris str. CCMP1986@NA
+60197@Cronartium quercuum@NA
+60480@Shewanella sp. MR-4@NA
+60481@Shewanella sp. MR-7@NA
+61084@Plecoglossus altivelis@ayu
+61143@Ceriops tagal@NA
+61366@Fusarium oxysporum f. cubense@NA
+61434@Dehalococcoides@NA
+61435@Dehalococcoides mccartyi@NA
+61622@Rhinopithecus roxellana@golden snub-nosed monkey
+62322@Shewanella baltica@NA
+62324@Anopheles funestus@African malaria mosquito
+62688@Blumeria graminis f. sp. hordei@NA
+62890@Solanum habrochaites@NA
+62928@Azoarcus sp. BH72@NA
+62977@Acinetobacter sp. ADP1@NA
+63577@Trichoderma atroviride@NA
+63737@Nostoc punctiforme PCC 73102@NA
+64091@Halobacterium sp. NRC-1@NA
+64187@Xanthomonas oryzae pv. oryzae@NA
+64471@Synechococcus sp. CC9311@NA
+64531@Heliconius erato petiverana@NA
+64680@Tamias sibiricus@Siberian chipmunk
+65489@Oryza barthii@NA
+65672@Piriformospora indica@NA
+65741@Pseudomonas knackmussii@NA
+66219@Clostridium phytofermentans@NA
+66262@Chenopodium amaranticolor@NA
+66420@Papilio xuthus@NA
+66913@Ictalurus furcatus@blue catfish
+67593@Phytophthora sojae@NA
+67825@Citrobacter rodentium@NA
+68287@Mesorhizobium@NA
+69293@Gasterosteus aculeatus@three-spined stickleback
+69771@Penicillium decumbens@NA
+70448@Ostreococcus tauri@NA
+70601@Pyrococcus horikoshii OT3@NA
+70739@Squalius alburnoides@NA
+71139@Eucalyptus grandis@NA
+71412@Fenneropenaeus merguiensis@NA
+71421@Haemophilus influenzae Rd KW20@NA
+71647@Pinus pinaster@NA
+71995@Paenibacillus vortex@NA
+72036@Lepeophtheirus salmonis@salmon louse
+72663@Thellungiella@NA
+72664@Eutrema salsugineum@NA
+73154@Vernicia fordii@NA
+73501@Cordyceps militaris@NA
+74030@Roseovarius@NA
+74109@Photobacterium profundum@NA
+74133@Symphysodon aequifasciata@blue discus
+74547@Prochlorococcus marinus str. MIT 9313@NA
+74645@Rosa rugosa@NA
+74649@Rosa chinensis@NA
+74940@Oncorhynchus tshawytscha@Chinook salmon
+75352@Megalobrama amblycephala@Wuchang bream
+75702@Populus euphratica@NA
+76772@Callospermophilus lateralis@golden-mantled ground squirrel
+77108@Nuphar advena@NA
+77133@uncultured bacterium@NA
+77166@Dendroctonus ponderosae@mountain pine beetle
+77588@Oryza coarctata@NA
+78454@Saguinus labiatus@red-chested mustached tamarin
+78579@Myceliophthora thermophila@NA
+79017@Rana pirica@NA
+79327@Schmidtea mediterranea@NA
+79782@Cimex lectularius@bed bug
+79923@Clonorchis sinensis@NA
+80379@Capsicum chinense@NA
+80765@Aphis gossypii@cotton aphid
+80836@Portunus pelagicus@sand crab
+80840@Burkholderiales@NA
+80863@Populus tremula x Populus alba@NA
+80884@Colletotrichum higginsianum@NA
+81077@artificial sequences@NA
+81726@unidentified microorganism@NA
+81824@Monosiga brevicollis@NA
+81985@Capsella rubella@NA
+82310@Phlebiopsis gigantea@NA
+82423@Tilia platyphyllos@NA
+82926@Pythium splendens@NA
+82927@Avicennia marina@NA
+83331@Mycobacterium tuberculosis CDC1551@NA
+83332@Mycobacterium tuberculosis H37Rv@NA
+83333@Escherichia coli K-12@NA
+83334@Escherichia coli O157:H7@NA
+83534@Macaca mulatta rhadinovirus 17577@NA
+83558@Chlamydia pneumoniae@NA
+83560@Chlamydia muridarum@NA
+83906@Boehmeria nivea@NA
+84588@Synechococcus sp. WH 8102@NA
+84645@Labeo rohita@rohu
+85552@Scylla paramamosain@green mud crab
+85558@Streptomyces turgidiscabies@NA
+85569@Salmonella enterica subsp. enterica serovar Typhimurium str. DT104@NA
+85571@Citrus reticulata@NA
+85620@Candidatus Phytoplasma asteris@NA
+85962@Helicobacter pylori 26695@NA
+85963@Helicobacter pylori J99@NA
+86665@Bacillus halodurans@NA
+86956@Pectinatus cerevisiiphilus@NA
+87674@Eucalyptus nitens@NA
+88036@Selaginella moellendorffii@NA
+88123@Prunus salicina@NA
+88149@Saccharina japonica@NA
+88211@Petrolisthes cinctipes@flat porcelain crab
+88217@Apis mellifera carnica@Carniolan honeybee
+88274@delta proteobacterium NaphS2@NA
+88501@Lasioglossum albipes@NA
+88556@Trialeurodes vaporariorum@greenhouse whitefly
+88730@Pinus massoniana@NA
+89187@Roseovarius nubinhibens ISM@NA
+89475@Atriplex lentiformis@NA
+89981@Saccharomyces bayanus x Saccharomyces cerevisiae@NA
+90069@Solea solea@common sole
+90322@Sphingomonas sp. A1@NA
+90370@Salmonella enterica subsp. enterica serovar Typhi@NA
+90371@Salmonella enterica subsp. enterica serovar Typhimurium@NA
+90410@Streptococcus phage DT1@NA
+90988@Pimephales promelas@fathead minnow
+92637@Metarhizium acridum@NA
+92652@Shrimp white spot syndrome virus@NA
+93061@Staphylococcus aureus subsp. aureus NCTC 8325@NA
+93062@Staphylococcus aureus subsp. aureus COL@NA
+93385@Brassica rapa subsp. chinensis@NA
+93929@Thermotoga petrophila@NA
+93934@Coturnix japonica@Japanese quail
+94034@Taenia multiceps@NA
+94122@Shewanella sp. ANA-3@NA
+94289@Sterkiella histriomuscorum@NA
+94328@Zingiber officinale@NA
+95486@Burkholderia cenocepacia@NA
+96939@Vitis riparia@NA
+98334@Bothrops moojeni@NA
+98794@Buchnera aphidicola (Schizaphis graminum)@NA
+99287@Salmonella enterica subsp. enterica serovar Typhimurium str. LT2@NA
+99883@Tetraodon nigroviridis@spotted green pufferfish
+100226@Streptomyces coelicolor A3(2)@NA
+100272@uncultured eukaryote@NA
+100468@Lactobacillus perolens@NA
+101510@Rhodococcus jostii RHA1@NA
+102106@Collinsella@NA
+102107@Prunus mume@Japanese apricot
+102803@Ips pini@North American pine engraver
+103188@Helicobacter pylori ATCC 43504@NA
+103351@Vitis amurensis@NA
+103372@Acromyrmex echinatior@Panamanian leafcutter ant
+103690@Nostoc sp. PCC 7120@NA
+103745@Chromolaena odorata@NA
+104341@Postia placenta@NA
+104385@Ruditapes decussatus@NA
+104421@Camponotus floridanus@Florida carpenter ant
+104660@Pinctada maxima@silver-lipped pearl oyster
+105023@Nothobranchius furzeri@turquoise killifish
+105599@Vitis labrusca x Vitis vinifera@NA
+106370@Frankia sp. CcI3@NA
+106590@Cupriavidus necator@NA
+106677@Frangula alnus@NA
+106774@Pachycladon fastigiatum@NA
+107243@Noccaea caerulescens@NA
+109174@Haliotis asinina@NA
+109478@Myotis brandtii@Brandt's bat
+109871@Batrachochytrium dendrobatidis@NA
+111670@Cladonia rangiferina@NA
+112509@Hordeum vulgare subsp. vulgare@domesticated barley
+113334@Melitaea cinxia@Glanville fritillary
+114090@Pediococcus inopinatus@NA
+114398@Parasteatoda tepidariorum@common house spider
+114524@Saccharomyces kudriavzevii@NA
+114525@Saccharomyces mikatae@NA
+114727@H1N1 subtype@NA
+115413@uncultured marine crenarchaeote@NA
+115414@uncultured marine alpha proteobacterium@NA
+115711@Chlamydophila pneumoniae AR39@NA
+115713@Chlamydophila pneumoniae CWL029@NA
+117187@Fusarium verticillioides@NA
+118072@Coelacanthimorpha@NA
+119210@H3N2 subtype@NA
+119602@Streptococcus dysgalactiae subsp. equisimilis@NA
+119830@Solanum torvum@NA
+119951@Eugenia uniflora@NA
+121759@Paracoccidioides brasiliensis@NA
+122586@Neisseria meningitidis MC58@NA
+124917@Armigeres subalbatus@NA
+125945@Drosophila biarmipes@NA
+126740@Thermotoga sp. RQ2@NA
+126793@Plasmodium vivax Sal-1@NA
+126911@Ammopiptanthus mongolicus@NA
+127999@Tanacetum parthenium@NA
+128735@Rosa hybrid cultivar@NA
+128810@Saccharum hybrid cultivar@NA
+129358@Phytophthora phaseoli@NA
+129788@Ruditapes philippinarum@NA
+131568@Kineococcus radiotolerans@NA
+132711@Sorghum propinquum@NA
+133804@uncultured marine gamma proteobacterium EBAC31A08@NA
+133822@uncultured marine group II euryarchaeote 37F11@NA
+134821@Ureaplasma parvum@NA
+135651@Caenorhabditis brenneri@NA
+136217@Curcuma longa@NA
+137520@Hypomesus transpacificus@NA
+138043@Acacia senegal@NA
+138408@Helenium autumnale@NA
+138695@Carollia brevicauda@NA
+139456@Fenneropenaeus chinensis@NA
+139649@Teleopsis dalmanni@NA
+140095@Dunaliella viridis@NA
+141207@Oncidium hybrid cultivar@NA
+143221@Salmonella enterica subsp. enterica serovar Tennessee@NA
+143302@Condylura cristata@star-nosed mole
+145522@Nannochloropsis oceanica@NA
+145942@Ophrys fusca@NA
+146134@Eospalax fontanierii@NA
+146500@Watermelon mosaic virus@NA
+147262@Hostuviroid@NA
+147949@Micropterus dolomieu@smallmouth bass
+148305@Magnaporthe grisea@NA
+149539@Salmonella enterica subsp. enterica serovar Enteritidis@NA
+153609@Moniliophthora perniciosa@NA
+153809@uncultured proteobacterium@NA
+153939@uncultured sulfate-reducing bacterium@NA
+155217@Catostomus snyderi@Klamath largescale sucker
+155864@Escherichia coli O157:H7 str. EDL933@NA
+155892@Caulobacter vibrioides@NA
+156230@Karenia brevis@NA
+158080@Chromohalobacter salexigens@NA
+158441@Folsomia candida@NA
+158543@Aristolochia fimbriata@NA
+158878@Staphylococcus aureus subsp. aureus Mu50@NA
+158879@Staphylococcus aureus subsp. aureus N315@NA
+159033@Citrus aurantiifolia@NA
+160232@Nanoarchaeum equitans@NA
+160488@Pseudomonas putida KT2440@NA
+160490@Streptococcus pyogenes M1 GAS@NA
+160492@Xylella fastidiosa 9a5c@NA
+160500@Rana muscosa@mountain yellow-legged frog
+163088@Flaveria angustifolia@NA
+164055@Pachymenia carnosa@NA
+164328@Phytophthora ramorum@Sudden oak death agent
+165789@Capsicum annuum var. glabriusculum@NA
+166361@Onthophagus taurus@NA
+169963@Listeria monocytogenes EGD-e@NA
+170187@Streptococcus pneumoniae TIGR4@NA
+170406@Agrobacterium sp. 31749@NA
+171101@Streptococcus pneumoniae R6@NA
+171245@uncultured Chlorophyta@NA
+171259@uncultured haptophyte@NA
+171916@Heliconius melpomene rosina@NA
+171917@Heliconius melpomene melpomene@NA
+172265@Ulmus glabra@NA
+172790@Solanum phureja@NA
+174621@Wyeomyia smithii@pitcher-plant mosquito
+174633@Candidatus Kuenenia stuttgartiensis@NA
+176275@Beauveria bassiana@NA
+176279@Staphylococcus epidermidis RP62A@NA
+176280@Staphylococcus epidermidis ATCC 12228@NA
+176299@Agrobacterium fabrum str. C58@NA
+176652@Invertebrate iridescent virus 6@NA
+177416@Francisella tularensis subsp. tularensis SCHU S4@NA
+178306@Pyrobaculum aerophilum str. IM2@NA
+178876@Cryptococcus neoformans var. grubii@NA
+180230@Cyprinid herpesvirus 3@NA
+180498@Jatropha curcas@NA
+181082@Emiliania huxleyi virus 86@NA
+181119@Pseudopodoces humilis@Tibetan ground-tit
+181209@Emiliania huxleyi virus 163@NA
+182814@Pinus elliottii var. elliottii@NA
+183190@Xylella fastidiosa Temecula1@NA
+183674@Miscanthus x giganteus@NA
+183855@Eucalyptus tereticornis@NA
+185431@Trypanosoma brucei TREU927@NA
+185753@Pospiviroid@NA
+185754@Cocadviroid@NA
+185756@Apscaviroid@NA
+185757@Coleviroid@NA
+185758@Avsunviroid@NA
+185759@Pelamoviroid@NA
+185793@Tomato yellow leaf curl China virus@NA
+186039@Fragilariopsis cylindrus@NA
+186497@Pyrococcus furiosus DSM 3638@NA
+186801@Clostridia@NA
+186842@Mus musculus x Mus spretus@NA
+186886@Pomovirus@NA
+186990@Hipposideros armiger@great roundleaf bat
+187003@Taphozous melanopogon@NA
+187007@Miniopterus fuliginosus@Japanese long-fingered bat
+187017@Murina leucogaster@Greater tube-nosed bat
+187410@Yersinia pestis KIM10+@NA
+187878@Thermococcus gammatolerans@NA
+190192@Methanopyrus kandleri AV19@NA
+190486@Xanthomonas axonopodis pv. citri str. 306@NA
+190650@Caulobacter crescentus CB15@NA
+190802@Cleome gynandra@NA
+191292@Rhodococcus aetherivorans@NA
+192222@Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819@NA
+192452@Cocksfoot streak virus@NA
+193567@Streptococcus pyogenes SSI-1@NA
+195099@Campylobacter jejuni RM1221@NA
+195102@Clostridium perfringens str. 13@NA
+196620@Staphylococcus aureus subsp. aureus MW2@NA
+196627@Corynebacterium glutamicum ATCC 13032@NA
+197221@Thermosynechococcus elongatus BP-1@NA
+198214@Shigella flexneri 2a str. 301@NA
+198215@Shigella flexneri 2a str. 2457T@NA
+198466@Streptococcus pyogenes MGAS315@NA
+198628@Dickeya dadantii 3937@NA
+199222@Pinellia pedatisecta@NA
+199225@Pinellia ternata@NA
+199310@Escherichia coli CFT073@NA
+203119@Clostridium thermocellum ATCC 27405@NA
+203262@Epinephelus tauvina@greasy grouper
+203696@Myotis ricketti@Rickett's big-footed Myotis
+203907@Candidatus Blochmannia floridanus@NA
+203908@Melampsora larici-populina@NA
+204038@Dickeya dadantii@NA
+204384@Gorgonia ventalina@NA
+205918@Pseudomonas syringae pv. syringae B728a@NA
+205921@Streptococcus agalactiae A909@NA
+205922@Pseudomonas fluorescens Pf0-1@NA
+206411@Pinctada martensi@NA
+206672@Bifidobacterium longum NCC2705@NA
+207559@Desulfovibrio alaskensis G20@NA
+208963@Pseudomonas aeruginosa UCBPP-PA14@NA
+208964@Pseudomonas aeruginosa PAO1@NA
+208973@Choristoneura fumiferana multiple nucleopolyhedrovirus@NA
+209261@Salmonella enterica subsp. enterica serovar Typhi str. Ty2@NA
+210007@Streptococcus mutans UA159@NA
+210372@Aquilaria sinensis@NA
+211586@Shewanella oneidensis MR-1@NA
+211604@Xerophyta humilis@NA
+212142@Petunia integrifolia subsp. inflata@NA
+212519@Globobulimina pseudospinescens@NA
+212527@Apis mellifera scutellata@African honeybee
+214092@Yersinia pestis CO92@NA
+214684@Cryptococcus neoformans var. neoformans JEC21@NA
+216389@Dehalococcoides sp. BAV1@NA
+216591@Burkholderia cenocepacia J2315@NA
+216595@Pseudomonas fluorescens SBW25@NA
+216597@Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344@NA
+216816@Bifidobacterium longum@NA
+216895@Vibrio vulnificus CMCP6@NA
+218491@Pectobacterium atrosepticum SCRI1043@NA
+218495@Streptococcus uberis 0140J@NA
+219542@Dermestes lardarius@bacon beetle
+219812@Tetramorium bicarinatum@NA
+220341@Salmonella enterica subsp. enterica serovar Typhi str. CT18@NA
+220664@Pseudomonas protegens Pf-5@NA
+220668@Lactobacillus plantarum WCFS1@NA
+220689@Caragana korshinskii@NA
+222523@Bacillus cereus ATCC 10987@NA
+223283@Pseudomonas syringae pv. tomato str. DC3000@NA
+223926@Vibrio parahaemolyticus RIMD 2210633@NA
+224308@Bacillus subtilis subsp. subtilis str. 168@NA
+224326@Borrelia burgdorferi B31@NA
+224914@Brucella melitensis bv. 1 str. 16M@NA
+225117@Pyrus x bretschneideri@NA
+225400@Myotis davidii@NA
+225849@Shewanella piezotolerans WP3@NA
+226125@Saccharomyces paradoxus NRRL Y-17217@NA
+226126@Saccharomyces mikatae IFO 1815@NA
+226127@Saccharomyces bayanus MCYC 623@NA
+226185@Enterococcus faecalis V583@NA
+226186@Bacteroides thetaiotaomicron VPI-5482@NA
+226302@Lachancea kluyveri NRRL Y-12651@NA
+226899@Grosmannia clavigera@NA
+226900@Bacillus cereus ATCC 14579@NA
+227321@Aspergillus nidulans FGSC A4@NA
+228095@Pseudomonas sp. M18@NA
+228410@Nitrosomonas europaea ATCC 19718@NA
+228578@Youcai mosaic virus@NA
+229193@Yersinia pestis biovar Microtus str. 91001@NA
+229990@Locusta migratoria manilensis@Oriental migratory locust
+231627@Procotyla fluviatilis@NA
+233150@Mycoplasma gallisepticum str. R@NA
+233412@Haemophilus ducreyi 35000HP@NA
+234826@Anaplasma marginale str. St. Maries@NA
+235443@Cryptococcus neoformans var. grubii H99@NA
+237561@Candida albicans SC5314@NA
+240292@Anabaena variabilis ATCC 29413@NA
+240364@Chaetoceros neogracile@NA
+242124@Populus yunnanensis@NA
+242159@Ostreococcus 'lucimarinus'@NA
+242231@Neisseria gonorrhoeae FA 1090@NA
+242507@Magnaporthe oryzae 70-15@NA
+242619@Porphyromonas gingivalis W83@NA
+243090@Rhodopirellula baltica SH 1@NA
+243159@Acidithiobacillus ferrooxidans ATCC 23270@NA
+243164@Dehalococcoides ethenogenes 195@NA
+243230@Deinococcus radiodurans R1@NA
+243231@Geobacter sulfurreducens PCA@NA
+243265@Photorhabdus luminescens subsp. laumondii TTO1@NA
+243274@Thermotoga maritima MSB8@NA
+243277@Vibrio cholerae O1 biovar El Tor str. N16961@NA
+243343@Flaveria vaginata@NA
+244447@Cynoglossus semilaevis@tongue sole
+246196@Mycobacterium smegmatis str. MC2 155@NA
+246200@Ruegeria pomeroyi DSS-3@NA
+246410@Coccidioides immitis RS@NA
+246437@Tupaia chinensis@Chinese tree shrew
+246787@Bacteroides cellulosilyticus@NA
+252305@Oceanicola batsensis HTCC2597@NA
+252598@Saccharomyces boulardii@NA
+253839@Streptomyces sp. C@NA
+255470@Dehalococcoides sp. CBDB1@NA
+257310@Bordetella bronchiseptica RB50@NA
+257314@Lactobacillus johnsonii NCC 533@NA
+258594@Rhodopseudomonas palustris CGA009@NA
+259536@Psychrobacter arcticus 273-4@NA
+260674@Citrullus lanatus subsp. vulgaris@watermelon
+260966@Coffea hybrid cultivar@NA
+261594@Bacillus anthracis str. 'Ames Ancestor'@NA
+262316@Mycobacterium avium subsp. paratuberculosis K-10@NA
+262543@Exiguobacterium sibiricum 255-15@NA
+262698@Brucella abortus bv. 1 str. 9-941@NA
+262724@Thermus thermophilus HB27@NA
+263140@Sitodiplosis mosellana@orange wheat blossom midge
+263744@Squalius pyrenaicus@NA
+264201@Candidatus Protochlamydia amoebophila UWE25@NA
+264203@Zymomonas mobilis subsp. mobilis ZM4 = ATCC 31821@NA
+264402@Capsella grandiflora@NA
+264462@Bdellovibrio bacteriovorus HD100@NA
+264731@Prevotella ruminicola 23@NA
+265669@Listeria monocytogenes serotype 4b str. F2365@NA
+266264@Cupriavidus metallidurans CH34@NA
+266834@Sinorhizobium meliloti 1021@NA
+267377@Methanococcus maripaludis S2@NA
+267409@Listeria monocytogenes serotype 1/2a str. F6854@NA
+267410@Listeria monocytogenes serotype 4b str. H7858@NA
+267608@Ralstonia solanacearum GMI1000@NA
+267671@Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130@NA
+267747@Propionibacterium acnes KPA171202@NA
+268747@Prochlorococcus phage P-SSM4@NA
+268748@Prochlorococcus phage P-SSP7@NA
+269084@Synechococcus elongatus PCC 6301@NA
+269796@Rhodospirillum rubrum ATCC 11170@NA
+269799@Geobacter metallireducens GS-15@NA
+272556@Aggregatibacter actinomycetemcomitans HK1651@NA
+272559@Bacteroides fragilis NCTC 9343@NA
+272560@Burkholderia pseudomallei K96243@NA
+272562@Clostridium acetobutylicum ATCC 824@NA
+272563@Clostridium difficile 630@NA
+272564@Desulfitobacterium hafniense DCB-2@NA
+272620@Klebsiella pneumoniae subsp. pneumoniae MGH 78578@NA
+272621@Lactobacillus acidophilus NCFM@NA
+272623@Lactococcus lactis subsp. lactis Il1403@NA
+272624@Legionella pneumophila subsp. pneumophila str. Philadelphia 1@NA
+272626@Listeria innocua Clip11262@NA
+272630@Methylobacterium extorquens AM1@NA
+272634@Mycoplasma pneumoniae M129@NA
+272843@Pasteurella multocida subsp. multocida str. Pm70@NA
+272942@Rhodobacter capsulatus SB 1003@NA
+272943@Rhodobacter sphaeroides 2.4.1@NA
+272944@Rickettsia conorii str. Malish 7@NA
+272947@Rickettsia prowazekii str. Madrid E@NA
+273057@Sulfolobus solfataricus P2@NA
+273075@Thermoplasma acidophilum DSM 1728@NA
+273384@Brevibacterium aurantiacum@NA
+273507@Phanerochaete chrysosporium RP-78@NA
+280463@Emiliania huxleyi CCMP1516@NA
+280699@Cyanidioschyzon merolae strain 10D@NA
+281310@Haemophilus influenzae 86-028NP@NA
+281687@Caenorhabditis japonica@NA
+282459@Staphylococcus aureus subsp. aureus MSSA476@NA
+284590@Kluyveromyces lactis NRRL Y-1140@NA
+284593@Candida glabrata CBS 138@NA
+284812@Schizosaccharomyces pombe 972h-@NA
+286192@Saccharum officinarum complex@NA
+290339@Cronobacter sakazakii ATCC BAA-894@NA
+290400@Jannaschia sp. CCS1@NA
+290402@Clostridium beijerinckii NCIMB 8052@NA
+290633@Gluconobacter oxydans 621H@NA
+291331@Xanthomonas oryzae pv. oryzae KACC 10331@NA
+291982@Strombus gigas@NA
+292414@Ruegeria sp. TM1040@NA
+292415@Thiobacillus denitrificans ATCC 25259@NA
+292805@Wolbachia endosymbiont strain TRS of Brugia malayi@NA
+293653@Streptococcus pyogenes MGAS5005@NA
+293754@Limonium bicolor@NA
+294102@Vriesea carinata@NA
+294128@Hyalella azteca@NA
+294748@Candida albicans WO-1@NA
+295405@Bacteroides fragilis YCH46@NA
+296543@Thalassiosira pseudonana CCMP1335@NA
+296591@Polaromonas sp. JS666@NA
+298176@Crassostrea hongkongensis@Hong Kong oyster
+299033@Lactobacillus reuteri F275@NA
+299768@Streptococcus thermophilus CNRZ1066@NA
+300267@Shigella dysenteriae Sd197@NA
+300268@Shigella boydii Sb227@NA
+300269@Shigella sonnei Ss046@NA
+300852@Thermus thermophilus HB8@NA
+302911@Bifidobacterium animalis subsp. lactis@NA
+306254@Campylobacter coli RM2228@NA
+306323@Streptococcus phage 2972@NA
+307947@Sinocyclocheilus angustiporus@NA
+307955@Sinocyclocheilus anophthalmus@eyeless golden-line fish
+307972@Apostichopus japonicus@Japanese sea cucumber
+308872@Phalaenopsis aphrodite subsp. formosana@NA
+309800@Haloferax volcanii DS2@NA
+309857@uncultured SAR11 cluster alpha proteobacterium@NA
+311400@Thermococcus kodakarensis@NA
+311424@Dehalococcoides sp. VS@NA
+311461@Hirudo verbana@NA
+311784@Bacteroides sp. WH2@NA
+311982@Streptomyces hygroscopicus subsp. jinggangensis@NA
+314127@Drechslerella stenobrocha@NA
+314232@Loktanella vestfoldensis SKA53@NA
+314256@Oceanicola granulosus HTCC2516@NA
+314261@Candidatus Pelagibacter ubique HTCC1002@NA
+314262@Roseobacter sp. MED193@NA
+315576@Chironomus riparius@NA
+316407@Escherichia coli str. K-12 substr. W3110@NA
+317513@Parhyale hawaiensis@NA
+318829@Magnaporthe oryzae@NA
+319224@Shewanella putrefaciens CN-32@NA
+319699@Equus asinus x caballus@mule
+319701@Streptococcus pyogenes MGAS6180@NA
+321956@Lactobacillus delbrueckii subsp. bulgaricus ATCC BAA-365@NA
+321967@Lactobacillus casei ATCC 334@NA
+322104@Scheffersomyces stipitis CBS 6054@NA
+322159@Streptococcus thermophilus LMD-9@NA
+323850@Shewanella loihica PV-4@NA
+323851@Prunus persica var. nucipersica@NA
+326297@Shewanella amazonensis SB2B@NA
+326424@Frankia alni ACN14a@NA
+326425@Lactobacillus helveticus CNRZ32@NA
+326426@Bifidobacterium breve UCC2003@NA
+327160@Candidatus Accumulibacter phosphatis@NA
+330779@Sulfolobus acidocaldarius DSM 639@NA
+330879@Aspergillus fumigatus Af293@NA
+331111@Escherichia coli E24377A@NA
+332648@Botryotinia fuckeliana B05.10@NA
+332952@Aspergillus flavus NRRL3357@NA
+333668@Theileria parva strain Muguga@NA
+335992@Candidatus Pelagibacter ubique HTCC1062@NA
+337075@Pyronema omphalodes@NA
+337191@Gordonia sp. KTR9@NA
+338618@Aquilegia formosa x Aquilegia pubescens@NA
+340099@Thermoanaerobacter pseudethanolicus ATCC 33223@NA
+340185@Escherichia coli E22@NA
+342108@Magnetospirillum magneticum AMB-1@NA
+342110@Ralstonia solanacearum UW551@NA
+343901@Flaveria kochiana@NA
+343904@Flaveria sonorensis@NA
+347834@Rhizobium etli CFN 42@NA
+349101@Rhodobacter sphaeroides ATCC 17029@NA
+349102@Rhodobacter sphaeroides ATCC 17025@NA
+349123@Lactobacillus reuteri 100-23@NA
+349161@Desulfotomaculum reducens MI-1@NA
+349965@Yersinia intermedia ATCC 29909@NA
+350054@Mycobacterium gilvum PYR-GCK@NA
+350703@Pseudomonas aeruginosa 2192@NA
+350704@Pseudomonas aeruginosa C3719@NA
+351605@Geobacter uraniireducens Rf4@NA
+351745@Shewanella sp. W3-18-1@NA
+352472@Dictyostelium discoideum AX4@NA
+352914@Plasmodium yoelii yoelii 17XNL@NA
+353496@Lactobacillus delbrueckii subsp. bulgaricus 2038@NA
+354242@Campylobacter jejuni subsp. jejuni 81-176@NA
+356475@Clio pyramidata@NA
+357544@Helicobacter pylori HPAG1@NA
+358574@uncultured microorganism@NA
+360102@Yersinia pestis Antiqua@NA
+360807@Roseburia inulinivorans@NA
+367110@Neurospora crassa OR74A@NA
+367737@Arcobacter butzleri RM4018@NA
+367830@Staphylococcus aureus subsp. aureus USA300@NA
+370551@Streptococcus pyogenes MGAS9429@NA
+370553@Streptococcus pyogenes MGAS2096@NA
+373153@Streptococcus pneumoniae D39@NA
+375288@Parabacteroides@NA
+377628@Yersinia pestis Nepal516@NA
+378006@Arabidopsis arenosa x Arabidopsis thaliana@NA
+379508@Lodderomyces elongisporus NRRL YB-4239@NA
+379731@Pseudomonas stutzeri A1501@NA
+381124@Zea mays subsp. mays@maize
+381666@Ralstonia eutropha H16@NA
+381754@Pseudomonas aeruginosa PA7@NA
+382245@Aeromonas salmonicida subsp. salmonicida A449@NA
+383407@Xanthomonas oryzae pv. oryzicola BLS256@NA
+386415@Clostridium novyi NT@NA
+386585@Escherichia coli O157:H7 str. Sakai@NA
+386656@Yersinia pestis Pestoides F@NA
+388272@Pseudomonas aeruginosa PACS2@NA
+388919@Streptococcus sanguinis SK36@NA
+391295@Streptococcus suis 05ZYH33@NA
+392499@Sphingomonas wittichii RW1@NA
+393116@Listeria monocytogenes FSL F2-515@NA
+393130@Listeria monocytogenes J0161@NA
+393595@Alcanivorax borkumensis SK2@NA
+395019@Burkholderia multivorans ATCC 17616@NA
+399726@Thermoanaerobacter sp. X514@NA
+400667@Acinetobacter baumannii ATCC 17978@NA
+400682@Amphimedon queenslandica@NA
+405566@Lactobacillus helveticus DPC 4571@NA
+405955@Escherichia coli APEC O1@NA
+407148@Campylobacter jejuni subsp. jejuni 81116@NA
+408170@human gut metagenome@NA
+408172@marine metagenome@NA
+410658@soil metagenome@NA
+410661@mouse gut metagenome@NA
+411459@Ruminococcus obeum ATCC 29174@NA
+411460@Ruminococcus torques ATCC 27756@NA
+411462@Dorea longicatena DSM 13814@NA
+411468@Clostridium scindens ATCC 35704@NA
+411476@Bacteroides ovatus ATCC 8483@NA
+411479@Bacteroides uniformis ATCC 8492@NA
+411901@Bacteroides caccae ATCC 43185@NA
+411903@Collinsella aerofaciens ATCC 25986@NA
+412675@Cucumis melo subsp. melo@NA
+413404@Candidatus Ruthia magnifica str. Cm (Calyptogena magnifica)@NA
+413999@Clostridium botulinum A str. ATCC 3502@NA
+414717@Pachycladon enysii@NA
+415540@uncultured marine microorganism@NA
+416269@Actinobacillus pleuropneumoniae serovar 5b str. L20@NA
+416870@Lactococcus lactis subsp. cremoris MG1363@NA
+419947@Mycobacterium tuberculosis H37Ra@NA
+420247@Methanobrevibacter smithii ATCC 35061@NA
+420662@Methylibium petroleiphilum PM1@NA
+423211@Streptococcus suis GZ1@NA
+425011@Aspergillus niger CBS 513.88@NA
+431241@Trichoderma reesei QM6a@NA
+431946@Escherichia coli SE15@NA
+435258@Leishmania infantum JPCM5@NA
+435895@Human herpesvirus 8 type M@NA
+436717@Acinetobacter oleivorans DR1@NA
+439493@Candidatus Pelagibacter sp. HTCC7211@NA
+447426@human oral metagenome@NA
+447909@Geobacillus virus E2@NA
+451515@Staphylococcus aureus subsp. aureus USA300_FPR3757@NA
+452654@Myotis laniger@Chinese water myotis
+452863@Arthrobacter chlorophenolicus A6@NA
+453835@Alishewanella aestuarii@NA
+463794@Pseudomonas fluorescens BBc6R8@NA
+465515@Micrococcus luteus NCTC 2665@NA
+469008@Escherichia coli BL21(DE3)@NA
+471876@Streptococcus pyogenes NZ131@NA
+472368@Boea hygrometrica@NA
+473781@Sphingomonas sp. LH128@NA
+474186@Enterococcus faecalis OG1RF@NA
+474922@Colletotrichum gloeosporioides@NA
+476272@Blautia hydrogenotrophica DSM 10507@NA
+477955@Symplocarpus renifolius@NA
+478749@Marvinbryantia formatexigens DSM 14469@NA
+479437@Eggerthella lenta DSM 2243@NA
+480808@Mycobacterium phage Giles@NA
+482058@Ralstonia phage RSL1@NA
+484021@Klebsiella pneumoniae subsp. pneumoniae NTUH-K2044@NA
+486041@Laccaria bicolor S238N-H82@NA
+488538@Candidatus Puniceispirillum marinum IMCC1322@NA
+489653@Neisseria lactamica 020-06@NA
+493803@Merkel cell polyomavirus@NA
+498216@Lactobacillus casei str. Zhang@NA
+502394@Deinococcus gobiensis@NA
+502801@Yersinia pseudotuberculosis PB1/+@NA
+503409@Symbiodinium sp. A1@NA
+508771@Toxoplasma gondii ME49@NA
+510516@Aspergillus oryzae RIB40@NA
+511145@Escherichia coli str. K-12 substr. MG1655@NA
+512562@Helicobacter pylori Shi470@NA
+512566@Streptococcus pneumoniae G54@NA
+515622@Butyrivibrio proteoclasticus B316@NA
+528351@Neisseria gonorrhoeae F62@NA
+528352@Neisseria gonorrhoeae FA19@NA
+529507@Proteus mirabilis HI4320@NA
+535026@Bacillus subtilis subsp. subtilis str. NCIB 3610@NA
+545533@Alishewanella jeotgali@NA
+550537@Salmonella enterica subsp. enterica serovar Enteritidis str. P125109@NA
+552467@Cryptococcus gattii@NA
+553239@Vibrio breoganii@NA
+553384@Alishewanella agri@NA
+554065@Chlorella variabilis@NA
+557722@Pseudomonas aeruginosa LESB58@NA
+557723@Haemophilus parasuis SH0165@NA
+558017@Betabaculovirus@NA
+558018@Gammabaculovirus@NA
+559292@Saccharomyces cerevisiae S288c@NA
+563041@Helicobacter pylori G27@NA
+564640@Elaviroid@NA
+565050@Caulobacter crescentus NA1000@NA
+568076@Metarhizium robertsii@NA
+568703@Lactobacillus rhamnosus GG@NA
+570508@Helicobacter pylori P12@NA
+572477@Allochromatium vinosum DSM 180@NA
+574521@Escherichia coli O127:H6 str. E2348/69@NA
+578457@Serpula lacrymans var. lacrymans S7.9@NA
+580050@Bifidobacterium animalis subsp. lactis Bl-04@NA
+580239@Saccharomyces cerevisiae SK1@NA
+580240@Saccharomyces cerevisiae W303@NA
+588858@Salmonella enterica subsp. enterica serovar Typhimurium str. 14028S@NA
+589924@Ferroglobus placidus DSM 10642@NA
+590646@Candida tenuis ATCC 10573@NA
+591154@Methylacidiphilum fumariolicum@NA
+591946@Escherichia coli LF82@NA
+592022@Bacillus megaterium DSM 319@NA
+592205@Helicobacter pylori B38@NA
+592326@Atta vollenweideri@NA
+595493@Saccharomyces cerevisiae x Saccharomyces paradoxus@NA
+610380@Harpegnathos saltator@Jerdon's jumping ant
+611301@Xanthomonas citri subsp. citri@NA
+619300@Spathaspora passalidarum NRRL Y-27907@NA
+634498@Methanobrevibacter ruminantium M1@NA
+634503@Edwardsiella ictaluri 93-146@NA
+638633@Ogataea angusta NCYC 495 leu1.1@NA
+641112@Ruminococcus flavefaciens FD-1@NA
+645875@Acanthopleura hirtosa@NA
+646099@human metagenome@NA
+651668@Human herpesvirus 8 strain rKSHV.219@NA
+655819@Beauveria bassiana ARSEF 2860@NA
+663917@Geobacter sulfurreducens KN400@NA
+664439@Paxillus involutus ATCC 200175@NA
+664942@Saccharum hybrid cultivar SP70-1143@NA
+665998@Saccharum hybrid cultivar (mixed)@NA
+669365@Microcoleus vaginatus PCC 9802@NA
+671143@Candidatus Methylomirabilis oxyfera@NA
+675635@Pseudonocardia dioxanivorans CB1190@NA
+679895@Escherichia coli BW25113@NA
+685892@Pseudomonas phage PaP1@NA
+688333@Populus cathayana@NA
+690850@Desulfovibrio africanus str. Walvis Bay@NA
+693272@Cafeteria roenbergensis virus BV-PW1@NA
+693996@Alphacoronavirus@NA
+694002@Betacoronavirus@NA
+694013@Gammacoronavirus@NA
+702459@Bifidobacterium bifidum PRL2010@NA
+706196@Saccharomyces arboricola@NA
+709033@Pantherophis obsoletus lindheimeri@NA
+709035@Masticophis flagellum testaceus@NA
+709348@Corallus hortulanus@Garden tree boa
+710472@dechlorinating enrichment culture KB-1@NA
+721817@Drosophila melanogaster x Drosophila sechellia@NA
+743836@Methylocystis sp. SB2@NA
+746128@Aspergillus fumigatus@NA
+749414@Streptomyces bingchenggensis BCW-1@NA
+749906@gut metagenome@NA
+756067@Microcoleus vaginatus FGP-2@NA
+759362@Ketogulonicigenium vulgare WSH-001@NA
+762550@Leuconostoc gasicomitatum LMG 18811@NA
+763057@Mesorhizobium huakuii 7653R@NA
+764486@Melita plumulosa@NA
+857571@Moraxella catarrhalis O35E@NA
+862719@Azospirillum lipoferum 4B@NA
+862751@Streptomyces sp. SirexAA-E@NA
+862962@Bacteroides fragilis 638R@NA
+869750@Arabidopsis thaliana x Arabidopsis lyrata@NA
+869827@Cucumis sativus var. sativus@NA
+870730@Ogataea angusta@NA
+872925@Solanum lycopersicum x Solanum pennellii@NA
+879462@Escherichia coli str. K-12 substr. MG1655star@NA
+885580@Fukomys damarensis@NA
+887700@Acetobacter aceti NBRC 14818@NA
+890395@Trypanosoma brucei brucei x gambiense 414@NA
+890396@Trypanosoma brucei brucei x gambiense 181@NA
+909946@Salmonella enterica subsp. enterica serovar Typhimurium str. ST4/74@NA
+931557@Ericerus pela@NA
+936046@Agaricus bisporus var. bisporus H97@NA
+983506@Rhizoctonia solani AG-1 IA@NA
+995087@Acidovorax avenae subsp. avenae RS-1@NA
+996475@Rana sierrae@Nevada yellow-legged frog
+998843@Ptomaphagus hirtus@NA
+999810@Botryotinia fuckeliana T4@NA
+1000561@Pseudomonas aeruginosa AES-1R@NA
+1001999@Eucalyptus spp. mixed library@NA
+1007467@Drosophila sechellia x Drosophila mauritiana@NA
+1026970@Nannospalax galili@Upper Galilee mountains blind mole rat
+1038921@Pseudomonas chlororaphis subsp. aureofaciens 30-84@NA
+1041015@Drosophila rhopaloa@NA
+1042402@Lactococcus lactis subsp. cremoris CNCM I-1631@NA
+1042403@Bifidobacterium animalis subsp. lactis CNCM I-2494@NA
+1042404@Streptococcus thermophilus CNCM I-1630@NA
+1043206@Acidiphilium sp. PM@NA
+1050200@Equus caballus x asinus@hinny
+1050722@Oryza sativa Indica Group x Oryza sativa Japonica Group@NA
+1055524@Burkholderia cenocepacia H111@NA
+1077442@Talaromyces marneffei PM1@NA
+1078123@Fibroporia radiculosa TFFH 294@NA
+1080340@Oryza sativa Japonica Group x Oryza sativa Indica Group@NA
+1091494@Methylomicrobium alcaliphilum 20Z@NA
+1111678@Lactococcus lactis subsp. cremoris UC509.9@NA
+1124478@Vibrio cholerae O1 str. C6706@NA
+1128429@Drosophila melanogaster x Drosophila simulans@NA
+1148157@Acinetobacter oleivorans@NA
+1172189@Oxytricha trifallax@NA
+1202667@Staphylococcus sp. OJ82@NA
+1219478@Saccharomyces cerevisiae x Saccharomyces bayanus@NA
+1236608@Moraxella catarrhalis BBH18@NA
+1239313@Ampelisca abdita@NA
+1240361@Arabidopsis thaliana x Arabidopsis arenosa@NA
+1247190@Saccharomyces cerevisiae BY4741@NA
+1262395@Puccinia striiformis f. sp. tritici 08/21@NA
+1266728@Mus musculus domesticus x M. m. molossinus@NA
+1267753@Salmonella enterica subsp. enterica serovar Javiana str. CFSAN001992@NA
+1271791@Magnaporthe oryzae KJ201@NA
+1297569@Mesorhizobium metallidurans STM 2683@NA
+1297570@Mesorhizobium sp. STM 4661@NA
+1324865@Brassica carinata x Brassica rapa@NA
+1325678@Saccharomyces cerevisiae x Saccharomyces mikatae@NA
+1334565@Listeria monocytogenes EGD@NA
+1336713@Avena sativa/Zea mays addition line@NA
+1385599@mixed culture KAZ_0815@NA

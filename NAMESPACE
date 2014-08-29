@@ -1,0 +1,15 @@
+export(
+connectDatabase,
+createESET,
+downloadGEOdata,
+GDSforGSE,
+GSEforGPL,
+GSEinDB,
+GSMdescriptions,
+loadDatabaseSchema,
+loadDataToCompendium,
+removeGSE,
+tagExperiment,
+updatePhenoData
+)
+import(Biobase,RMySQL)

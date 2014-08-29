@@ -1,0 +1,14 @@
+#!/usr/bin/perl -w
+use POSIX qw(strftime);
+
+$conf{'geobasedir'} =  "/data/BigMac/data/GEO/GPL" ;
+$confdb{'description'} = -1;
+$confdb{'sequence'}= -1;
+$confdb{'chromosome'}= -1;
+$confdb{'chrstart'}= -1;
+$confdb{'chrstop'}= -1;
+$confdb{'suppliername'}= -1;
+$confdb{'supplierspotid'}= 0;
+$confdb{'colnr'}= -1;
+$confdb{'rownr'}= -1;
+$confdb{'control_type'}= -1;
