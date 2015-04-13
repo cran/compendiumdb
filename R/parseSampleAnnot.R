@@ -7,7 +7,7 @@ parseSampleAnnot <- function (phenoData, colname)
   if(check > 1){
     headers <- character()
     for(j in 1:nrow(x)){
-      cat(".")
+      #cat(".")
       out <- patternCheck(x[j,colname])
       n <- strsplit(unlist(strsplit(out,";;")),":")
       for(y in n){
@@ -26,7 +26,7 @@ parseSampleAnnot <- function (phenoData, colname)
       colnames(sampleCharData) <- headers
       
       for(j in 1:nrow(x)){
-        cat(".")
+        #cat(".")
         out <- patternCheck(x[j,colname])
         n <- strsplit(unlist(strsplit(out,";;")),":")
         for(y in n){
@@ -42,7 +42,7 @@ parseSampleAnnot <- function (phenoData, colname)
       phenoData <- cbind(sampleCharData,x[,-which(colnames(x)==colname)])
     }else{phenoData <- x}
   }
-  cat("Done\n")
+  #cat(".")
   as.matrix(phenoData)
 }
 

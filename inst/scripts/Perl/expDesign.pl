@@ -9,9 +9,9 @@ use LWP::Simple;
 use DBI;
 use POSIX qw(strftime);
 
-my ($gse,$gplref,$expid,$user, $passwd, $host, $dbname)=@ARGV;
+my ($gse,$gplref,$expid,$user, $passwd, $host, $port, $dbname)=@ARGV;
 
-my $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
+my $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
 
 my $sth_get_source=$dbh->prepare("SELECT hs.hybid,s.samplesource FROM sample s
 				 INNER JOIN hyb_has_sample hs ON (s.idsample=hs.idsample)
@@ -23,7 +23,7 @@ my $sth_update_hyb=$dbh->prepare("UPDATE hyb SET hybdesign=? WHERE hybid=?");
 my $sth_update_expdesign=$dbh->prepare("UPDATE hyb SET expdesign=? WHERE hybid=?");
 
 
-my (@hybids,@samplesource1,@samplesource2);
+my (@hybids,@hybids2,@samplesource1,@samplesource2); 
 #@hybids=(1,2,3);
 
 $sth_get_source->execute($expid,1,$gplref) or die "Died: ".$sth_get_source->errstr."\n";
@@ -40,6 +40,7 @@ $sth_get_source->execute($expid,2,$gplref) or die "Died: ".$sth_get_source->errs
 while(my($hybid,$samplesource2)=$sth_get_source->fetchrow())
 {
   if(defined($hybid)){
+    push(@hybids2,$hybid);
     push(@samplesource2,$samplesource2);
   }
 }
@@ -80,6 +81,16 @@ if(@samplesource2){ ### Two-channel experiment
 	  $sth_update_expdesign->execute("SC",$hybid);
 	}
       }
+
+## if same platform has been used for single and double channel 
+if(scalar(@hybids)!=scalar(@hybids2)){
+	my %second = map {$_=>1} @hybids2;
+    	my @only_in_first = grep { !$second{$_} } @hybids;		
+	foreach my $hybid(@only_in_first){
+	  $sth_update_expdesign->execute("SC",$hybid);
+	}
+}
+
 $sth_update_expdesign->finish();
 
 ######### Subroutine ############
@@ -110,3 +121,4 @@ for(my $i=0;$i<@$samplesrc1;$i++)
   }
 return(\%hash);
 }
+

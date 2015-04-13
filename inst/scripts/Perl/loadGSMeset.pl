@@ -10,7 +10,7 @@ use POSIX qw(strftime);
 
 my $sleep_before_connect = 5;
 
-my ($gsm,$gplid,$x,$datadir,$expid,$user, $passwd, $host, $dbname) = @ARGV;
+my ($gsm,$gplid,$x,$datadir,$expid,$user, $passwd, $host, $port, $dbname) = @ARGV;
 my $logdir = "$datadir/BigMac/log";
 my $basedir = "$datadir/BigMac/data/GEO";
 my (%sampledata);
@@ -23,7 +23,7 @@ $now_string = strftime "%H:%M:%S", localtime; ###### JUNE 9th 2011
 #print $gsm."\t".$basedir."\t".$expid."\n"; ###Umesh
 #sleep $sleep_before_connect;
 
-$dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host",$user,$passwd) or
+$dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or
 die "Cannot open connection", "$DBI::errstr" ;
 
 #$dbh->{'RaiseError'} = 1;
@@ -105,7 +105,7 @@ close OUT;
 $read=0;
 
 open GSM , "$basedir/GSM/$gsm.soft" or die "Can't open $basedir/GSM/$gsm.soft for read;$!";
-open OUTGSM, ">>$basedir/tempGSM.txt" or die "Can't open $basedir/tempGSM.txt for read;$!";
+#open OUTGSM, ">>$basedir/tempGSM.txt" or die "Can't open $basedir/tempGSM.txt for read;$!";
 
 my $now_string = strftime "%Y %b %e %H:%M:%S", localtime; ###### JUNE 9th 2011
 #print $now_string."_______"; ###### JUNE 9th 2011

@@ -4,28 +4,29 @@ use POSIX qw(strftime);
 
 # define connection to db
 
-my ($conffile,$user,$passwd,$host,$dbname) = @ARGV;
+my ($conffile,$user,$passwd,$host,$port,$dbname) = @ARGV;
 
 sleep 5;
 
-$dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
+$dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
 # GPL filename (eg. GPL96.soft) and GPL directory are read from command line
 
-require $conffile;
+eval{require $conffile;}; ## check if file is available if not it will throw error
+
 $conffile =~ /(.*?)\/BigMac\//;
 my $dir = $1;
 # Define some variables for storage of important info.
-$pident=""; # platfrom identifier from GEO
-$ptitle=""; # platform title
-$pdistri=""; # platform distribution
-$pprov=""; # platform provider
+$pident="";   # platfrom identifier from GEO
+$ptitle="";   # platform title
+$pdistri="";  # platform distribution
+$pprov="";    # platform provider
 $pdescrip=""; # platform description
-$ptech=""; # platform technology
-$porg=""; # platform organism
+$ptech="";    # platform technology
+$porg="";     # platform organism
 
 my $datetime = strftime "%Y-%m-%d %H:%M:%S", localtime;
 
-open GPL , "$dir/BigMac/data/GEO/GPL/$conf{'gpl'}.soft" or die "Can't open $dir/BigMac/data/GEO/GPL/$conf{'gpl'}.soft for read; $!";
+open GPL , "$dir/BigMac/data/GEO/GPL/$conf{'gpl'}.soft" or die "Cannot open $dir/BigMac/data/GEO/GPL/$conf{'gpl'}.soft for read; $!";
 while(<GPL>){
 	if(/^\^PLATFORM\s=\s(.*?)[\r|\n]/){$pident=$1;}
 	if(/^\!Platform_title\s=\s(.*?)[\r|\n]/){$ptitle=$1;}
@@ -69,7 +70,7 @@ $orgid = $org[0];
 # Insert the chip info into the database
 $sth = $dbh->prepare("INSERT INTO chip (idorganism,provider,description,title,distribution,technology,db_platform_id,date_loaded) " .
 				 "VALUES(?,?,?,?,?,?,?,?)");
-$sth->execute($orgid,$pprov,$pdescrip,$ptitle,$pdistri,$ptech,$pident,$datetime) or die "Died: ".$sth->errstr."\nThis platform cannot be loaded in the current version of the package, since '$porg' does not have a unique NCBI Taxonomy ID\n";
+$sth->execute($orgid,$pprov,$pdescrip,$ptitle,$pdistri,$ptech,$pident,$datetime) or die "Died: ".$sth->errstr."\nThis platform cannot be loaded using the current version of the package, since '$porg' does not have a unique NCBI Taxonomy ID\n";
 # obtain chip id from database
 $idchip = $dbh->{'mysql_insertid'};
 

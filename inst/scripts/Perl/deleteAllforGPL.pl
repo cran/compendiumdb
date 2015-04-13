@@ -1,8 +1,8 @@
 #!/usr/bin/perl -w
 use DBI;
-my ($gpl,$user, $passwd, $host, $dbname) = @ARGV;
+my ($gpl,$user, $passwd, $host, $port, $dbname) = @ARGV;
 
-$dbh = DBI->connect("dbi:mysql:dbname=$dbname",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
+$dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
 $sth_get_idchip = $dbh->prepare("SELECT idchip FROM chip WHERE db_platform_id=?");
 $sth_get_idspot = $dbh->prepare("SELECT idspot FROM chip_has_reporter WHERE idchip=?");
 $sth_del_idchip = $dbh -> prepare ("delete from chip where idchip=?");

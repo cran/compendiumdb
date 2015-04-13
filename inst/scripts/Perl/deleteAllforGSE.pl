@@ -1,10 +1,10 @@
 #!/usr/bin/perl -w
 use DBI;
-my($gse,$user, $passwd, $host, $dbname) = @ARGV;
+my($gse,$user, $passwd, $host, $port, $dbname) = @ARGV;
 
 my $input = $gse;
 
-my $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;$sth_get_idExperiment = $dbh->prepare("SELECT idExperiment FROM experiment WHERE expname=?");
+my $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;$sth_get_idExperiment = $dbh->prepare("SELECT idExperiment FROM experiment WHERE expname=?");
 $sth_get_idExperiment = $dbh -> prepare ("select idExperiment from experiment where expname = ?");
 $sth_get_hybid = $dbh->prepare("SELECT hybid FROM experiment_has_hyb WHERE idExperiment=?");
 $sth_get_idsample = $dbh->prepare("SELECT idsample FROM hyb_has_sample WHERE hybid=?");

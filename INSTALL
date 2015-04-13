@@ -1,0 +1,176 @@
+INSTALLING PERL AND RELATED MODULES TO USE compendiumdb
+April 13, 2015
+NOTE: This file has been copied and adapted from the INSTALL file provied with the 
+ WriteXLS package. Any mistakes are ours and not the responsibility of the 
+ maintainers of the WriteXLS package.
+
+BASIC REQUIREMENTS
+
+1. A working version of Perl (http://www.perl.org/)
+
+2. The following Perl modules:
+ 
+  Cwd
+  Date::Manip
+  DBD::mysql
+  DBI
+  File::Copy;
+  LWP::Simple 
+  LWP::UserAgent
+  Net::FTP
+  POSIX
+
+GENERAL COMMENTS
+
+As of this writing, the current release version of Perl is 5.20, however not all computer
+systems are using this version. Some will be using 5.18, 5.16, 5.14, 5.12 or even earlier
+distributions of Perl.
+
+Cwd, File::Copy and Net::FTP are (part of) "Core" Perl modules and should be part of a 
+standard Perl installation.
+
+The other modules may or may not be installed. Thus, in most cases, all you should have to 
+install is a recent Perl distribution for your operating system and then add the missing modules.
+
+OPERATING SYSTEM SPECIFIC RECOMMENDATIONS
+
+Below are some recommendations for common scenarios on the 3 major operating systems in use 
+for R to get you up and running with compendiumdb as easily as possible.
+
+Ideally, all you need to do is to use:
+
+  install.packages("compendiumdb")
+
+within R and have a MySQL (see package vignette) and a Perl distribution with the specified 
+modules installed.
+
+Note that you should only consider these following options, if some of the required Perl 
+modules are missing or you already know that you do not have Perl installed at all.
+
+Be aware, that depending upon the nature of your working computer environment, you may
+need to seek the assistance of a System Administrator, who has full access rights to your
+computer in order to install third party software. You may also be restricted by any local
+computer use policies that affect the software that you can install and use.
+
+
+WINDOWS
+
+As of this writing, the easiest way to install Perl is to use the  ActiveState Perl distribution from: 
+
+  http://www.activestate.com/activeperl/
+
+If this is the only Perl installation on your computer, that should be all that you need to then
+run compendiumdb. The ActiveState installer should also modify your $PATH to enable you to easily run
+Perl. To verify this, within a Windows Command Terminal, run:
+
+  perl -v
+
+to check to be sure that ActiveState Perl is run and to verify the version and build number 
+information. 
+
+Thus, the easiest installation for compendiumdb on Windows is a three step process:
+
+1. Install MySQL (see package vignette)
+2. Install ActiveState Perl
+3. Install the compendiumdb binary from CRAN (.zip file)
+
+Be sure to start a new R session after the installation of all components, so that the $PATH for the 
+R session is correct.
+
+If you should have another version of Perl installed, it is possible that the other version
+of Perl will be in your $PATH before the ActiveState version. You should then modify your $PATH so
+that the ActiveState version is located first.
+
+If you should have an older version of ActiveState installed on your system, which may be missing
+any of the required modules, you can either upgrade or the easiest way to install them would be to
+use ActiveState's Perl Package Manager (PPM). This would allow you to easily install the additional
+modules from the PPM repositories without requiring additional building tools. More information on
+using PPM is available here:
+
+  http://www.activestate.com/activeperl
+
+Alternatives to using the ActiveState version of Perl would include using the Strawberry Perl distribution
+available from:
+
+  http://strawberryperl.com/
+
+If you should need a C compiler and related tools for Windows, please see the Rtools package
+from Duncan Murdoch at:
+
+  http://cran.r-project.org/bin/windows/Rtools/
+
+
+LINUX
+
+The more common Linux distributions, such as Debian, Ubuntu, Red Hat and Fedora, provide relatively easy
+to use "package management" systems that would allow you to install Perl and add-on modules via command line
+and GUI based tools. On the former two, the most common is 'apt-get'. On the latter two, 'yum' is common.
+
+These package management systems will also check and handle any package dependencies that may also be required
+on your system, including Perl itself.
+
+These systems would enable you to install Perl and any additional modules using pre-compiled binary packages
+via these command line and/or GUI based tools without needing additional build tools.
+
+For Debian/Ubuntu, these Perl modules are packaged as '.deb' files and are typically prefixed with 
+'libSOMETHING-perl'. For example:
+
+  libtext-csv-perl 
+
+For RH/Fedora, these perl modules are packaged as 'RPM' files and are typically prefixed with 'perl-SOMETHING'.
+For example:
+  
+  perl-Text-CSV
+
+Thus, using the package management tool for your system, install the missing modules as may be required.
+
+You could also install the modules from source code using CPAN and if that is your preferred approach, feel
+free to do so. Remember that you will need the required Perl, C and build tools (in the case of Encode) in 
+order to use this methodology.
+
+Lastly, ActiveState does offer a Linux compatible Perl distribution and PPM repository structure. So that is
+also an option for you.
+
+
+OSX
+
+Apple installs a default Perl distribution with OSX on Macs. 
+
+As with Windows above, the easiest approach may very well be to replace/supercede Apple's installation with the
+ActiveState Perl installation, which would provide all of the required modules.
+
+If you prefer to stay with the Apple provided Perl distribution and tools, which I did, you may need to install
+the missing Perl modules.
+
+In order to do this, Apple uses CPAN and provides the 'cpan' command line tool to install and manage Perl modules.
+
+As discussed, you may also need a C compiler and related build tools to install Encode. This will require the 
+installation of the Apple XCode Tools bundle, which can be downloaded separately from the Apple Developer web site at:
+
+  https://developer.apple.com/xcode/index.php
+
+or from the Mac App Store. If you download from the Apple Developer web site, a free membership is required.
+
+Note that recent versions of Xcode no longer include command line tools. These will need to be installed separately 
+from within Xcode by going to Preferences -> Downloads or directly via the Apple Developer web site link above.
+
+Once the tools are installed, you can then install any missing Perl modules by using the command line in a Terminal
+such as:
+
+  [sudo -H] cpan -i Encode
+
+The 'sudo -H' is optional. It is required if you want to install the additional modules for yourself and other users 
+of the Mac. Otherwise, if you just want to perform a 'local' install for yourself, it is not required.
+
+
+OTHERS
+
+On other operating systems, such as Solaris, the basic approach will be similar to that of Linux, where you can use the 
+vendor supplied Perl and installation/build tools or possibly use the ActiveState Perl distribution, which is also
+available for Solaris.
+
+If you have another operating system not referenced here, check with your vendor and/or post a message to r-help. If you 
+do elect to post to r-help, please be sure to read the Posting Guide to maximize the likelihood of getting a reasonable
+response: http://www.R-project.org/posting-guide.html
+
+

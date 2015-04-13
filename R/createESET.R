@@ -6,7 +6,10 @@ function (con, GSEid, GPLid = "", parsing = TRUE)
   password <- con$password
   host <- con$host
   dbname <- con$dbname
-    
+  port <- con$port
+  
+  if(length(GSEid)>1){stop("Please make sure to enter a single GSE ID at a time")}  
+
   idGSE <- GSEinDB(con,GSEid)
 
   if(GPLid==""){
@@ -21,25 +24,27 @@ function (con, GSEid, GPLid = "", parsing = TRUE)
     dbClearResult(rs)
 	
     if(nrow(GPL)==0){
-      return(paste("Experiment with",GSEid,"has not been loaded in the compendium yet.",sep=" "))	
+      stop(paste("Series ecord",GSEid,"has not been loaded in the compendium database yet",sep=" "))	
     }
     newEset <- c()
+    cat(paste0("Creating ExpressionSet for ",nrow(GPL)," GPL(s): ",paste(GPL[,1],collapse=",")),"\n")
     for(i in 1:dim(GPL)[1]){
       esetX <- createESET(con=con,GSEid=GSEid,GPLid=GPL[i,1],parsing)
       newEset <- c(newEset,esetX)
     }
-
     newEset
-
   }else{
 
-    esets <- list()
+    if(length(GPLid)>1){stop("Please make sure to enter a single GPL ID at a time")}
 
-    expDesign <- idGSE[idGSE$Chip==GPLid,"experimentDesign"]
+    esets <- list()
+    flag <- 1
+
+    expDesign <- rev(idGSE[idGSE$Chip==GPLid,"experimentDesign"])
     query <- paste("SELECT count(*) FROM expressionset e
-	   		INNER JOIN chip ON e.idchip=chip.idchip
-                        INNER JOIN experiment ex ON e.idExperiment=ex.idExperiment
-                        WHERE chip.db_platform_id =\'",GPLid,"\' and ex.expname=\'",GSEid,"\'",sep="")
+	   	    INNER JOIN chip ON e.idchip=chip.idchip
+                    INNER JOIN experiment ex ON e.idExperiment=ex.idExperiment
+                    WHERE chip.db_platform_id =\'",GPLid,"\' and ex.expname=\'",GSEid,"\'",sep="")
 	
     rs <- dbSendQuery(connect, query)
     rsError <- fetch(rs, n = -1)
@@ -56,32 +61,32 @@ function (con, GSEid, GPLid = "", parsing = TRUE)
     plFile <- gsub("$","\"",plFile)
 	
     if(rsError!=0){
-      system(paste("perl",plFile,GSEid,GPLid,scriptLoc,user,password,host,dbname))
+      system(paste("perl",plFile,GSEid,GPLid,scriptLoc,user,password,host,port,dbname))
       
       load("output.RData")	
-      system("mv output.RData oldOutput.RData")
+      file.rename("output.RData","oldOutput.RData")
       
-      phenoData_all <- GSMdescriptions(conn=con,GSEid=GSEid,GPLid=GPLid)
+      phenoData_all <- GSMdescriptions(con=con,GSEid=GSEid,GPLid=GPLid)
       phenoData <- phenoData_all[which(phenoData_all[,"GPL"]==GPLid),]
-			
-      ### One-channel experiment: parsing 'samplechar' for phenodata ######
-      if(length(grep("samplechar",colnames(phenoData)))){
-        if(parsing && expDesign=="SC"){
-          cat("Parsing phenoData")
-          phenoData <- parseSampleAnnot(phenoData,"samplechar")				
-        }
-      }
-
-      ### Two-channel experiment: parsing label columns for phenodata ######
-      if(length(grep("samplesource_ch2",colnames(phenoData)))){
-        if(parsing && expDesign%in%c("CR","DC","DS")){
-          cat("Parsing phenoData")
-          labels <- colnames(phenoData)[1:2]
-          phenoData <- parseSampleAnnot(phenoData,labels[2])				
-          phenoData <- parseSampleAnnot(phenoData,labels[1])					
-        }
-      }
+      
+      if(length(expDesign==1)){		
+	      ### One-channel experiment: parsing 'samplechar' for phenodata ######
+	      if(length(grep("samplechar",colnames(phenoData)))){
+	        if(parsing && expDesign=="SC"){
+	          phenoData <- parseSampleAnnot(phenoData,"samplechar")				
+	        }
+	      }
 	
+	      ### Two-channel experiment: parsing label columns for phenodata ######
+	      if(length(grep("samplesource_ch2",colnames(phenoData)))){
+	        if(parsing && expDesign%in%c("CR","DC","DS")){
+	          labels <- colnames(phenoData)[1:2]
+	          phenoData <- parseSampleAnnot(phenoData,labels[2])				
+	          phenoData <- parseSampleAnnot(phenoData,labels[1])					
+	        }
+	      }
+	}
+		
       if(length(compendiumESet) > 1){
         for(i in 1:length(compendiumESet)){
           x <- match(colnames(exprs(compendiumESet[[i]])),rownames(phenoData))
@@ -97,13 +102,15 @@ function (con, GSEid, GPLid = "", parsing = TRUE)
         annotation(compendiumESet) <- GPLid
       }
 
-	name <- paste("eset",GSEid,"_",GPLid,sep="")
+	name <- paste("eset",GSEid,"_",GPLid,"_",expDesign,sep="")
 	esets[name]<-compendiumESet
 
     }else{
-      cat(paste("Platform ",GPLid," has been not loaded in the compendium for ",GSEid,"!\n",sep=""))
+      stop(paste("Platform record ",GPLid," has been not loaded in the compendium database for ",GSEid,"\n",sep=""))
+      flag <- 0
     }
-    if(length(esets)){esets}
+    if(flag){esets}
   }
 }
+
 

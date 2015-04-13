@@ -2,9 +2,9 @@
 use DBI;
 use Date::Manip;
 use POSIX qw(strftime);
-my ($GSEid,$basedir, $user, $passwd, $host, $dbname) = @ARGV;
+my ($GSEid,$basedir, $user, $passwd, $host, $port, $dbname) = @ARGV;
 
-$dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host",$user,$passwd) or
+$dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or
 die "Cannot open connection", "$DBI::errstr" ;
 
 ## SQL query

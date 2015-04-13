@@ -144,7 +144,7 @@ sub download_file_from_ftp
 
         if ( $filename ne "all" ) {
                 print "\nDownloading $filename from $ftp_site/$ftp_dir...\n";
-                my $ftp = Net::FTP  -> new( $ftp_site, reconnect => 1, Debug => 0, Passive => 1, BlockSize => 33554432 ) or print "Cannot connect to $ftp_site: $@\n";
+                my $ftp = Net::FTP  -> new( $ftp_site, reconnect => 1, Debug => 0, Passive => 1, BlockSize => 33554432, Timeout => 300 ) or print "Cannot connect to $ftp_site: $@\n";
                 $ftp->login( "anonymous", '-anonymous@' ) or print "Cannot login ", $ftp->message, "\n";
                 $ftp->cwd( "$ftp_dir" ) or print "Cannot change working directory ", $ftp->message, "\n";
                 $ftp->binary();

@@ -1,9 +1,9 @@
 \name{GSEinDB}
 \alias{GSEinDB}
-\title{Check presence of GSEs in compendium database
+\title{Retrieve information about a GSE loaded in the compendium database
 }
 \description{
-Provide an overview of the GSE IDs present in the compendium database
+Retrieve information about GEO series (GSE) records present in the compendium database
 }
 \usage{
 GSEinDB(con, GSEid = NULL)
@@ -16,21 +16,21 @@ GSEinDB(con, GSEid = NULL)
   }
   \item{GSEid}{
     character vector specifying the GSE ID(s). The default value
-    is \code{NULL} and the function then returns information on all
-    GSEs present in the compendium database
+    is \code{NULL}, in which case the function returns an overview of all
+    GSEs present in the compendium database.
   } 
 }
 \value{
-  An object of class data.frame consisting of ten columns: i) ID of
+  An object of class \code{data.frame} consisting of ten columns: i) ID of
   the record in the compendium database, ii) GSE ID, iii) educated
-  guess of the experimental design, iv) GPL ID, v) number of
+  guess on the experimental design of the experiment, iv) GPL ID, v) number of
   samples,  vi) user-specified tag for the experiment, (see
   \code{tagExperiment}), vii) NCBI taxonomy ID, viii) corresponding
-  organism namem, ix) GDS ID and x) date and time on which the data
+  organism name, ix) GDS ID and x) date and time on which the data
   was loaded in the database
 }
 \author{
-Umesh Nandal
+Umesh K. Nandal
 }
 \note{The value for the variable \code{experimentDesign} is determined by
   parsing the sample information provided by GEO. The variable can take

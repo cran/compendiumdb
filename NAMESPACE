@@ -12,4 +12,4 @@ removeGSE,
 tagExperiment,
 updatePhenoData
 )
-import(Biobase,RMySQL)
+import(Biobase,GEOquery,RMySQL)

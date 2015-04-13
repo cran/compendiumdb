@@ -2,7 +2,7 @@ loadDatabaseSchema <-
 function(con, updateSchema = FALSE, file = ""){
 
   if(updateSchema){
-    response <- readline("You have set updateSchema equal to 'TRUE'. This will update your current schema and delete all data in the compendium database. Type 'y' if you want to continue, type 'n' if you don't want to update the schema:\n")
+    response <- readline("You have set 'updateSchema' equal to 'TRUE'. This will update your current schema and delete all data in the compendium database (if any).\nType 'y' if you want to continue, type 'n' if you don't want to update the schema:\n")
     if(response=='y'){
       connect <- con$connect
       dir <- path.package("compendiumdb")
@@ -26,13 +26,13 @@ function(con, updateSchema = FALSE, file = ""){
         }
 	
       ## Load organism table to the compendium database. This table has been constructed using information 
-      ## from NCBI Taxonomy and from organism contained in GEO according to GEOmetadb
+      ## from NCBI Taxonomy and from the field organism in GEO according to the package GEOmetadb
       orgFile <- paste(dir,"/extdata/compendiumOrganismTable.txt",sep="")
       query <- paste("LOAD DATA LOCAL INFILE '",orgFile,"' INTO TABLE organism FIELDS TERMINATED BY '@' LINES TERMINATED BY '\n' (ncbiorgid,officialname,shortname)",sep="")
       rs <- dbSendQuery(connect, query)	
 	
       print("... Done!")
     }
-  }else{print("Set updateSchema=TRUE to delete all the content of compendium database and reload the schema")}
+  }else{cat("Set updateSchema equal to 'TRUE' to (re)load the schema and delete all data in the compendium database \n")}
 }
 

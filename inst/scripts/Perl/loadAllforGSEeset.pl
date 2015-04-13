@@ -10,7 +10,7 @@ use DBI;
 use POSIX qw(strftime);
 use compendiumSUB;
 
-my($gse, $dataLoc, $scriptsLocation, $user, $passwd, $host, $dbname,$gpls) = @ARGV;
+my($gse, $dataLoc, $scriptsLocation, $user, $passwd, $host, $port, $dbname, $gpls) = @ARGV;
 
 ##################### Create loading_log.txt #########################################
 
@@ -62,6 +62,10 @@ rename("log.txt","loading_log.txt");
 my @GSE;
 push(@GSE,$gse);
 my %GDS_and_GPL_for_GDS = get_GPLs_and_GDSs_for_known_GSEs ( @GSE );
+my $size = keys %GDS_and_GPL_for_GDS;
+if($size==0){print "Please check if the data for $gse has been downloaded from GEO to your 'BigMac' directory. If not use the function downloadGEOdata to download it\n";exit;}
+my @new_GPLs;
+my @uniq_GPLs;
 my @these_GPLs;
 my @these_GDSs;
 
@@ -94,14 +98,11 @@ print "GSE: $gse\n";
 print "GPLs: @these_GPLs\n";
 print "GDSs: @these_GDSs\n";
 
-if($gpls ne ""){
-	@these_GPLs = split(/-/,$gpls);
-}
 #@these_GDSs = ("GDS2368","GDS2366");
 
 ############################### Load GSE ##############################################
 
-my $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
+my $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
 my $sth_get_exp = $dbh->prepare("SELECT idExperiment FROM experiment WHERE expname=?");
 my $sth_get_phenoInformation = $dbh->prepare("SELECT * FROM hyb_has_description WHERE hybid
 							IN(SELECT hyb.hybid FROM hyb inner join experiment_has_hyb eh on hyb.hybid=eh.hybid
@@ -133,7 +134,7 @@ while(my $chunk=<GSE>){
 close GSE ;
 
 if($dataCheck==0){
-	print "Expression data for $gse is not available on GEO (check family.soft file for more details). Quitting data loading to compendium!\n";
+	print "Expression data for $gse is not available on GEO (check family.soft file for more details). Quitting data loading to compendium database\n";
 	exit;
 }
 
@@ -166,6 +167,16 @@ my $sth = $dbh->prepare("SELECT * FROM chip WHERE db_platform_id=?");
 
 if(scalar(@these_GPLs)==0){@these_GPLs=@gpl;}
 
+if($gpls ne ""){
+	@new_GPLs = split(/-/,$gpls);
+	my %second = map {$_=>1} @these_GPLs;
+	@these_GPLs = grep { $second{$_} } @new_GPLs; #common GPLs
+	@uniq_GPLs = grep { !$second{$_} } @new_GPLs; 
+
+	if(scalar(@these_GPLs)==0){print "@new_GPLs does not correspond to $gse\n";exit;}
+ 	if(scalar(@uniq_GPLs)!=0){print "@uniq_GPLs does not correspond to $gse\n"}
+}
+
 foreach my $GPL(@these_GPLs)
 {
 	$sth->execute($GPL) or die "Died: ".$sth->errstr."\n";
@@ -174,7 +185,7 @@ foreach my $GPL(@these_GPLs)
 		print "Loading $GPL ...\n";
 		#my $datetime = strftime "%Y-%m-%d %H:%M:%S", localtime;
 		my $cmnd;
-		($cmnd) = "perl $scriptdir/Perl/loadGPL.pl $geodatabasedir/BigMac/annotation/configuration/gplLoadConf_$GPL.pl $user $passwd $host $dbname" ;
+		($cmnd) = "perl $scriptdir/Perl/loadGPL.pl $geodatabasedir/BigMac/annotation/configuration/gplLoadConf_$GPL.pl $user $passwd $host $port $dbname" ;
                 $cmnd =~ s/\\//g;
 	        my $flag = system($cmnd);
 		if ($flag!=0)
@@ -258,7 +269,7 @@ if($hyb_loaded == scalar@gsm){
 			foreach my $gs(@gsm)
 			{
 				my $cmnd;
-				($cmnd) = "perl -I $geodatabasedir/BigMac/COMPENDIUM $scriptdir/Perl/loadGSMeset.pl $gs $GPLref $x $geodatabasedir $expid $user $passwd $host $dbname" ;
+				($cmnd) = "perl -I $geodatabasedir/BigMac/COMPENDIUM $scriptdir/Perl/loadGSMeset.pl $gs $GPLref $x $geodatabasedir $expid $user $passwd $host $port $dbname" ;
                 		$cmnd =~ s/\\//g;
 			       	my $flag = system($cmnd);
 		                $insert=1;
@@ -301,8 +312,7 @@ if(scalar@GPLeset){
 }
 
 if($flag){
-		#my $GPLnew="GPL2510";
-		my ($cmnd) = "perl $scriptdir/Perl/parsingSoftFile_forESET.pl $gse $GPLref $scriptdir $geodatabasedir $expid $user $passwd $host $dbname" ;
+		my ($cmnd) = "perl $scriptdir/Perl/parsingSoftFile_forESET.pl $gse $GPLref $scriptdir $geodatabasedir $expid $user $passwd $host $port $dbname" ;
 		$cmnd =~ s/\\//g;
 		my $flag = system($cmnd);
 }
@@ -311,14 +321,14 @@ $sth_expressionset -> finish();
 
 ########################### Inserting the hybDesign to hyb table ############################
 foreach my $GPLref(@these_GPLs){
-	my ($cmnd) = "perl $scriptdir/Perl/expDesign.pl $gse $GPLref $expid $user $passwd $host $dbname" ;
+	my ($cmnd) = "perl $scriptdir/Perl/expDesign.pl $gse $GPLref $expid $user $passwd $host $port $dbname" ;
 	$cmnd =~ s/\\//g;
 	my $flag = system($cmnd);
 }
 
 #@these_GDSs=();
 
-############################### Load GDSs Description into table hyb_has_description ######################################
+############################### Load GDS Description into table hyb_has_description ######################################
 my @GPLpheno;
 my $sth_GDS= $dbh->prepare("SELECT idGDS FROM gds WHERE GDS=?");
 my $sth_phenoCheck=$dbh -> prepare("SELECT DISTINCT c.db_platform_id FROM chip c
@@ -359,7 +369,7 @@ if($gdsflag){
 		else
 		{
 	        foreach my $gdsGPL(@these_GPLs){
-	                my ($cmnd)= "perl $scriptdir/Perl/loadGDS.pl $GDS $gse $gdsGPL $geodatabasedir/BigMac/data/GEO $user $passwd $host $dbname";
+	                my ($cmnd)= "perl $scriptdir/Perl/loadGDS.pl $GDS $gse $gdsGPL $geodatabasedir/BigMac/data/GEO $user $passwd $host $port $dbname";
 	                $cmnd =~ s/\\//g;
 			my $flag=system($cmnd);
 			if ($flag!=0){die};
@@ -382,7 +392,7 @@ if($gdsflag){
         if($phenoflag)
         {
 		print "Loading phenotypic data of $gse without GDS ...\n";
-                my ($cmnd)= "perl $scriptdir/Perl/load_notGDS.pl $expid $geodatabasedir/BigMac/data/GEO $user $passwd $host $dbname";
+                my ($cmnd)= "perl $scriptdir/Perl/load_notGDS.pl $expid $geodatabasedir/BigMac/data/GEO $user $passwd $host $port $dbname";
                 $cmnd =~ s/\\//g;
 		my $flag=system($cmnd);
 		if ($flag!=0){die};

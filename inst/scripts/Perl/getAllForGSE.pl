@@ -58,7 +58,7 @@ my %GDS_and_GPL_for_GDS = get_GPLs_and_GDSs_for_known_GSEs ( @GSE );
 my @these_GPLs;
 my @these_GDSs;
 my $hi=0;
-if(! keys %GDS_and_GPL_for_GDS){ print "This is not a valid public GSE or http://www.ncbi.nlm.nih.gov/entrez/eutils is down. Please check and try again later \n"; exit;}
+if(! keys %GDS_and_GPL_for_GDS){ print "This is not a valid public GSE or ftp.ncbi.nlm.nih.gov is down. Please check and try again later \n"; exit;}
 foreach my $this_GSE ( keys %GDS_and_GPL_for_GDS )
 {
 	@these_GPLs = @{ ${ $GDS_and_GPL_for_GDS{$this_GSE} } { "GPLs" } };
@@ -239,12 +239,13 @@ $scriptsLoc =~ s/\//\\\"\/\\\"/g;
 $scriptsLoc =~ s/\\\"//;
 $scriptsLoc =~ s/$/\\\"/;
 
-if($OS eq "linux"){
-	$scriptsLoc =~ s/\"//g;        	#### use it when calling the script in Linux
-	$dirPATH =~ s/\"//g; 		#### use it when calling the script in Linux
+if($OS eq "MSWin32"){
+    $scriptsLoc =~ s/\\/\\\\/g;
+    $dirPATH =~ s/\\/\\\\/g;
+
 }else{
-	$scriptsLoc =~ s/\\/\\\\/g;
-	$dirPATH =~ s/\\/\\\\/g;
+    $scriptsLoc =~ s/\"//g;        	#### use it when calling the script in Linux/Mac
+    $dirPATH =~ s/\"//g; 		#### use it when calling the script in Linux/Mac
 }
 
 opendir(DIR,"$bigMacLocation/BigMac/data/GEO/GDS_description");
@@ -309,7 +310,7 @@ foreach my $GDS (@these_GDSs)
 
 ########################## Download GSE file ##########################################################
 
-my($slaap) = 0;
+my($sleep) = 0;
 my($url,$cmnd);
 
 my $comment = "\nDownloading $gse.soft ...\n";
@@ -331,12 +332,12 @@ foreach my $file(@files)
 
 my $rfile=$scriptsLoc."/downloadSoftFile.R";
 
-if($OS eq "linux"){
-	$rfile=~ s/\"//g;           #### use it when calling the script in Linux
-	$geodatabasedir =~ s/\"//g; #### use it when calling the script in Linux
+if($OS eq "MSWin32"){
+    $rfile =~ s/\\/\\\\/g;
+    $geodatabasedir =~ s/\\/\\\\/g;
 }else{
-	$rfile =~ s/\\/\\\\/g;
-	$geodatabasedir =~ s/\\/\\\\/g;
+    $rfile=~ s/\"//g;           #### use it when calling the script in Linux/Mac
+    $geodatabasedir =~ s/\"//g; #### use it when calling the script in Linux/Mac
 }
 
 my $errorMsg;
@@ -349,12 +350,11 @@ if($gseTag)
         my $if_downloaded = download_file_from_ftp ( "ftp.ncbi.nlm.nih.gov", "pub/geo/DATA/SOFT/by_series/$gse", $ncbi_gseFamily_filename, '', $local_dir );
         system ("Rscript $scriptsLoc/gzipScript.R $geodatabasedir/GSE/$ncbi_gseFamily_filename $geodatabasedir/GSE/$gseFamily");
         #print $errorMsg;
-	sleep($slaap);
+	sleep($sleep);
 }
 if($errorMsg)
 {
  	print "Problem in connecting to ftp.ncbi.nlm.nih.gov, $gse.soft has not been downloaded. Please retry \n";
-        `rm -rf BigMac`;
         exit;
 }
 	my @gsm;
@@ -448,7 +448,7 @@ print "Platform $gp ($x of ".scalar(@gpl).") --->\n";
 
 			my $ncbi_gpl_filename = $gp.".annot.gz";
 
-	                ################## Download #################################
+	            ################## Download #################################
 
 			my $local_dir = $CUR_DIR;
 			print "Downloading annotation file for $gp ...\n";
@@ -460,7 +460,7 @@ print "Platform $gp ($x of ".scalar(@gpl).") --->\n";
                         #print "$if_downloaded\n";
 				if ( $if_downloaded=~/No such file or directory/ )
 				{
-					print "$ncbi_gpl_filename has not been downloaded\n";
+					print "$ncbi_gpl_filename has not been downloaded, default platform annotation will be used\n";
 				} else {
 					system ("Rscript $scriptsLoc/gzipScript.R $dirPATH/$ncbi_gpl_filename $dirPATH/$gp");
                                         open ANNOTGPL, "$bigMacLocation/$gp.soft" or die "Can't open $bigMacLocation/$gp.soft for read;$!";
@@ -474,7 +474,7 @@ print "Platform $gp ($x of ".scalar(@gpl).") --->\n";
 	                                }
 			}
 
-			sleep($slaap);
+			sleep($sleep);
 
 			print "Downloading SOFT file ...\n";
 			# Download SOFT file containing the headers of the platform

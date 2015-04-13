@@ -1,16 +1,16 @@
 \name{GSMdescriptions}
 \alias{GSMdescriptions}
-\title{List sample annotation of samples in an experiment
+\title{List sample annotation of samples for a given GSE
 }
 \description{
   Extract the phenotypic data of each sample record
   (GSM) in the specified GSE in a tabular format 
 }
 \usage{
-GSMdescriptions(conn, GSEid, GPLid = "")
+GSMdescriptions(con, GSEid, GPLid = "")
 }
 \arguments{
-  \item{conn}{
+  \item{con}{
     \code{list} containing a connection object specifying the user name
     and password to connect or interact with the compendium database (see \code{\link{connectDatabase}})
   }
@@ -18,9 +18,9 @@ GSMdescriptions(conn, GSEid, GPLid = "")
     character string specifying the GSE ID
   }
   \item{GPLid}{
-    character vector specifying the GPL ID. The default value is
+    character string specifying the GPL ID. The default value is
     \code{""}, in which case the phenotypic data will be
-    extracted for each of the GPLs in a GSE
+    extracted for each of the GPLs in the GSE specified by \code{GSEid}.
   }
 }
 \details{The function uses
@@ -28,15 +28,15 @@ GSMdescriptions(conn, GSEid, GPLid = "")
   the phenotypic data. If a GDS is not available, it generates
   phenotypic data based on the sample characteristics, sample source,
   and sample title specified for each GSM. In case of a double-channel
-  experiment sample characteristics and sample source are given for both channels.
+  experiment, sample characteristics and sample source are given for both channels.
 }
   
 \value{
-  A character matrix containing a row for each GSM and columns for the
-  phenotypic data and the GPL ID of the platform used. 
+  A character \code{matrix} containing a row for each GSM and columns for the
+  phenotypic data and the GPL ID(s) of the platform used. 
 }
 \author{
-Umesh Nandal
+Umesh K. Nandal
 }
 \examples{
  \dontrun{

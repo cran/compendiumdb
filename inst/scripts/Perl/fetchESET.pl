@@ -7,9 +7,9 @@ use LWP::Simple;
 use DBI;
 use POSIX qw(strftime);
 
-my($gse, $gpl, $scriptsLocation, $user, $passwd, $host, $dbname) = @ARGV;
+my($gse, $gpl, $scriptsLocation, $user, $passwd, $host, $port, $dbname) = @ARGV;
 
-my $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
+my $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
 
 ## Deleting GSE using removeGSE() and reloading it or another dataset scrambles the eset filenames. That gives a problem in creating the .RData file.
 ## Hence sorting filenames is required

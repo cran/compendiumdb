@@ -1,9 +1,9 @@
 \name{GDSforGSE}
 \alias{GDSforGSE}
-\title{Retrieve the GDS ID for a given GSE ID
+\title{Retrieve information about a GDS for a given GSE
 }
 \description{
-Retrieve the GDS ID(s) corresponding to a given GSE ID
+Retrieve information about the GDS(s) corresponding to given GSE ID
 }
 \usage{
 GDSforGSE(con, GSEid)
@@ -12,23 +12,24 @@ GDSforGSE(con, GSEid)
   \item{con}{
     \code{list} containing a connection object specifying the user name
     and password to connect or interact with the compendium database
-    (see \code{\link{connectDatabase}}
+    (see \code{\link{connectDatabase}})
   }
   \item{GSEid}{
-    character vector specifying the GSE ID(s)
+    character string specifying the GSE ID
   }
 }
 \details{
   The GEO staff manually curates part of the records in GEO and
-  reassembles the biologically and statistically comparable records
-  into a GDS. This function allows the user to check if the series
+  reassembles biologically and statistically comparable records
+  into a GEO dataset (GDS). This function allows the user to check if the series
   record (GSE) has been manually curated by GEO and has a corresponding
   GDS ID.}
 \value{
-  An object of class data.frame returned by \code{GSEinDB}
+  An object of class \code{data.frame} returned by \code{GSEinDB} giving
+  detailed information on the corresponding GDS(s).
 }
 \author{
-Umesh Nandal
+Umesh K. Nandal
 }
 \seealso{
 \code{\link{GSEinDB}}
@@ -36,6 +37,7 @@ Umesh Nandal
 \examples{
  \dontrun{
   conn <- connectDatabase(user="usrname",password="passwd",dbname="compendium")
-  GDSforGSE(conn,c("GSE1657","GSE1428"))
+  # Retrieve information about GDSs corresponding to GSE1657
+  GDSforGSE(conn,c("GSE1657"))
  }
 }

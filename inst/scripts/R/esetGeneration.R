@@ -5,7 +5,7 @@ sink(msg,type="message",append=TRUE)
 #sink(msg,type="output")
 
 library(Biobase)
-require(methods)
+library(methods)
 
 cmd_args <- commandArgs(trailingOnly=TRUE)
 

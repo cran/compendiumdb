@@ -5,12 +5,12 @@ function(con, GSEid, GPLid = "", datadir = getwd()){
   password <- con$password
   host <- con$host
   dbname <- con$dbname
+  port <- con$port
 
   x <- list.dirs(path=datadir,recursive=FALSE)
   if(length(grep("/BigMac$",x))==0){
-    return(paste("Data directory BigMac is not present in",datadir,"!"))
+    stop(paste("Data directory BigMac is not present in directory",datadir))
   }else{
-    #attach(con)
     GPLid <- paste(GPLid,collapse="-")
     dir <- path.package("compendiumdb")
 
@@ -26,9 +26,7 @@ function(con, GSEid, GPLid = "", datadir = getwd()){
     plFile <- gsub("^","\"",plFile)
     plFile <- gsub("$","\"",plFile) 
 
-    system(paste("perl -I",paste(dataLoc,"/BigMac/COMPENDIUM",sep=""),plFile,GSEid,dataLoc,scriptLoc,user,password,host,dbname,GPLid))
-    #system(paste("perl",plFile,GSEid,dataLoc,scriptLoc,user,password,host,dbname,GPLid))
-    #detach(con)
+    system(paste("perl -I",paste(dataLoc,"/BigMac/COMPENDIUM",sep=""),plFile,GSEid,dataLoc,scriptLoc,user,password,host,port,dbname,GPLid))
   }
 }
 

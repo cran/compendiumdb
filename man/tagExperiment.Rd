@@ -12,25 +12,25 @@ tagExperiment(con, GSEid, tag)
   \item{con}{
     \code{list} containing a connection object specifying the user name
     and password to connect or interact with the compendium database
-    (see \code{\link{connectDatabase}}
+    (see \code{\link{connectDatabase}})
   }
   \item{GSEid}{
     character string specifying the GSE ID
   }
   \item{tag}{
     character string specifying the text labels with which to tag the
-    experiment
+    GSE specified by \code{GSEid}
   }
 }
 \details{
-  This function will update the value of the \code{tag} record for the
-  specified GSE ID in the compendium database. See the variable
+  This function updates the value of the \code{tag} record for the
+  specified GSE ID in the compendium database; see the variable
   \code{tagExperiment} of the data frame returned by the
-  \code{link{GSEinDB}} function. This makes it easy to search for
-  specific experiments based on the tags that were added
+  \code{link{GSEinDB}} function. Adding tags makes it easy to search for
+  specific experiments.
 }
 \author{
-Umesh Nandal
+Umesh K. Nandal
 }
 \seealso{
   \code{\link{GSEinDB}}

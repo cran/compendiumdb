@@ -32,6 +32,8 @@ function(GSEid, destdir = getwd()){
 
       file.copy(paste(dir,"/extdata/configuration.txt",sep=""),paste(dataLoc,"/BigMac/annotation/configuration/configuration.txt",sep=""))
       file.copy(paste(dir,"/scripts/BigMac/COMPENDIUM",sep=""),paste(dataLoc,"/BigMac",sep=""),recursive=TRUE)
+    }else if(!file.exists(paste(dataLoc,"/BigMac/COMPENDIUM/compendiumSUB.pm",sep=""))){
+	stop("Please check if the BigMac directory has the right directory structure to load the data")
     }
 
   dataLoc <- gsub("^","\"",dataLoc)
@@ -41,7 +43,6 @@ function(GSEid, destdir = getwd()){
   plFile <- gsub("^","\"",plFile)
   plFile <- gsub("$","\"",plFile)
 
-  #system(paste("perl",plFile,GSEid,dataLoc,scriptLoc))
   system(paste("perl -I",paste(dataLoc,"/BigMac/COMPENDIUM",sep=""),plFile,GSEid,dataLoc,scriptLoc))
 
   files <- list.files(destdir)
@@ -51,13 +52,8 @@ function(GSEid, destdir = getwd()){
   k <- grep("GDS.*.soft",files)
 	
   ff <- files[c(i,j,k)]
+  file.remove(ff)
 
-  if (length(ff)>0){
-    for(l in 1:length(ff)){
-      x <- gsub("^","\"",ff[l])
-      x <- gsub("$","\"",x)	 
-      system(paste("rm",x))
-    }
-  }
+  catch = file.remove(paste(destdir,"/BigMac/data/GEO/GSE/",GSEid,"_family.soft.gz",sep=""))
 }
 

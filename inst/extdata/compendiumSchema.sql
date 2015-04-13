@@ -361,7 +361,7 @@ DROP TABLE IF EXISTS `organism`;
 /*!40000 SET character_set_client = utf8 */;
 CREATE TABLE `organism` (
   `idorganism` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `ncbiorgid` int(10) unsigned DEFAULT NULL,
+  `ncbiorgid` int(10) DEFAULT NULL,
   `officialname` text DEFAULT NULL,
   `shortname` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idorganism`)
@@ -460,7 +460,7 @@ CREATE TABLE `sample` (
   `samplegrowth` text,
   `sampledataprocessing` text,
   `providerid` text,
-  `samplenumber` smallint(5) unsigned DEFAULT NULL,
+  `samplenumber` smallint(5) DEFAULT NULL,
   PRIMARY KEY (`idsample`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;

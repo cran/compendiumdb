@@ -1,0 +1,40 @@
+=============  BigMac  ==============================
+This directory contains the compendiumSUB.pm module in the COMPENDIUM subdirectory, 
+required by Perl scripts to communicate with the Gene Expression Omnibus (GEO) database:
+
+COMPENDIUM(directory)
+	compendiumSUB.pm
+
+=============  Perl =================================
+This directory consists of Perl scripts to parse and load the data from SOFT files 
+downloaded from GEO. The Perl scripts are grouped into subdirectories according to 
+their functionality as follows:
+
+
+- Scripts to download GEO SOFT files to the BigMac/data/GEO directory:
+
+	getAllForGSE.pl
+
+
+- Scripts to load the SOFT files into the database:
+
+	deleteAllforGPL.pl
+	deleteAllforGSE.pl
+	expDesign.pl
+        fetchESET.pl
+	load_notGDS.pl
+	loadAllforGSEeset.pl
+	loadGDS.pl
+	loadGPL.pl
+	loadGSM.pl
+	loadGSMeset.pl
+	parsingSoftFile_forESET.pl
+	transpose.pl
+
+=============  R =================================
+R scripts that are called by Perl scripts to download a SOFT file from GEO, 
+to unzip the files and to create an ExpressionSet:
+
+	downloadSoftFile.R
+	esetGeneration.R
+	gzipScript.R

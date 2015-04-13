@@ -1,18 +1,20 @@
 GSMdescriptions <-
-function (conn, GSEid, GPLid = "")
+function (con, GSEid, GPLid = "")
 {
 
-  con <-conn$connect
+  if (length(GSEid)!=1) stop("Please make sure to enter a single GSE ID")
+  connect <-con$connect
 
   ###########Get idExperiment for the GSE
-  idGSE <- GSEinDB(conn,GSEid)
-  if (is.character(idGSE)) stop(idGSE)
+  idGSE <- GSEinDB(con,GSEid)
 
   idGDS <- idGSE$GDS
   idExperiment <- unique(idGSE$id_Compendium)
   idExperiment_inDB_null <- is.null(idExperiment)
 
+  ## Experimental design as determined by expDesign.pl
   if(GPLid!=""){
+    if(length(GPLid)>1){stop("Please make sure to enter a single GPL corresponding to a single GSE")}
     expDesign <- idGSE[idGSE$Chip==GPLid,"experimentDesign"]
     if(length(expDesign)==0){stop(paste(GPLid,"does not correspond to",GSEid))}
   }else{
@@ -35,7 +37,7 @@ function (conn, GSEid, GPLid = "")
         query_hyb <- paste(query1,idExperiment,sep="")
       }
 
-      rs <- dbSendQuery(con, query_hyb)
+      rs <- dbSendQuery(connect, query_hyb)
       data <- fetch (rs, n= -1) 
       dbClearResult(rs)
 	
@@ -44,7 +46,6 @@ function (conn, GSEid, GPLid = "")
       type <- unique(data[,3])
 
       flag <- 0		
-      ## experimental design is determined in expDesign.pl
       if(expDesign=='CR' || expDesign=='DC' || expDesign=='DS'){ ##  two-channel design
         queryS <- "SELECT hyb.barcode,hyb.hybid, sample.sampletitle, sample.samplelabel, sample.samplecharacteristics, sample.samplesource, sample.samplenumber FROM sample
 				INNER JOIN hyb_has_sample hs ON sample.idsample=hs.idsample 
@@ -54,7 +55,7 @@ function (conn, GSEid, GPLid = "")
 				INNER JOIN experiment e on eh.idExperiment= e.idExperiment WHERE e.idExperiment="
 			
         query_sample <- paste(queryS,idExperiment,sep="")
-        rs <- dbSendQuery(con, query_sample)
+        rs <- dbSendQuery(connect, query_sample)
         sampleData <- fetch (rs, n= -1) 
         dbClearResult(rs)
 
@@ -88,7 +89,7 @@ function (conn, GSEid, GPLid = "")
         flag <- 1
       }
 							
-      ###########Create matrix with descriptions
+      ###########Create character matrix with descriptions
       first_out <- array(NA,dim=c((length(GSM)+1), (length(type)+3) ) )
       first_out[1,(length(type)+3)]<-"GPL"
       for(i in 1:(length(type)))
@@ -107,7 +108,7 @@ function (conn, GSEid, GPLid = "")
           platform_query_part1 <- "select distinct chip.db_platform_id from chip inner join hyb on hyb.idchip=chip.idchip where hyb.barcode = '"
           platform_query_part2 <- "'"
           query_platform <- paste(platform_query_part1,GSM[j],platform_query_part2,sep="")
-          rs <- dbSendQuery(con, query_platform)
+          rs <- dbSendQuery(connect, query_platform)
           platform <- fetch (rs, n= -1)
           platform <- as.character(platform)
           first_out[j+1,(length(type)+3)] <- platform 

@@ -7,10 +7,10 @@ function (con, GSEid, tag)
   rs <- dbSendQuery(con, query_GSE)
   gse <- fetch (rs, n= -1)
   dbClearResult(rs)
-  if(nrow(gse)==0){return(paste("Experiment",GSEid,"has not been loaded in the compendium yet",sep=" "))}
+  if(nrow(gse)==0){stop(paste("Series record",GSEid,"has not been loaded in the compendium yet",sep=" "))}
 	
   query_tag <- paste("UPDATE experiment SET tag='",tag,"' WHERE expname='",GSEid,"'",sep="")
 
   rs <- dbSendQuery(con, query_tag)
-  cat("Experiment",GSEid,"has been tagged\n")
+  cat("GSE record",GSEid,"has been tagged \n")
 }

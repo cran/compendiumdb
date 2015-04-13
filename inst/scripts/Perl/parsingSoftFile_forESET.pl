@@ -6,10 +6,11 @@ use LWP::UserAgent;
 use strict;
 use Cwd;
 use LWP::Simple;
+use File::Copy;
 use DBI;
 use POSIX qw(strftime);
 
-my ($gse,$gplref,$scriptdir, $dataLoc,$expid,$user, $passwd, $host, $dbname)= @ARGV;
+my ($gse,$gplref,$scriptdir, $dataLoc,$expid,$user, $passwd, $host, $port, $dbname)= @ARGV;
 
 #####---------(BLOCK1) Read and parse the SOFT file for getting data -----------#######
 open GSE , "$dataLoc/BigMac/data/GEO/GSE/$gse"."_family.soft" or die "Can't open $dataLoc/BigMac/data/GEO/GSE/$gse.family.soft for read.";
@@ -28,10 +29,10 @@ $scriptdir =~ s/\//\\\"\/\\\"/g;
 $scriptdir =~ s/\\\"//;
 $scriptdir =~ s/$/\\\"/;
 
-if($OS eq "linux"){
-	$scriptdir =~ s/\"//g;	#### use it when calling the script in Linux
+if($OS eq "MSWin32"){
+    $scriptdir =~ s/\\/\\\\/g;
 }else{
-	$scriptdir =~ s/\\/\\\\/g;
+    $scriptdir =~ s/\"//g;	#### use it when calling the script in Linux/Mac
 }
 
 print "Loading samples data ... $now\n";
@@ -60,7 +61,7 @@ my @array = split(/\@/,join('',@data));
 my @headers= grep { !$hsh{$_}++ }@head;
 
 #print "@headers\n";
-####----(BLOCK2) If there are multiple number of columns in different samples, the lowest number of cols will be used further --- ####
+####----(BLOCK2) If there are different numbers of columns in different samples, the lowest number of cols will be used further --- ####
 if(scalar@headers!=1){
   my %hash;
   foreach my $val(@headers){
@@ -89,7 +90,7 @@ open GSE , "$dataLoc/BigMac/data/GEO/GSE/$gse"."_family.soft" or die "Can't open
 my $array="";
 while(my $chunk=<GSE>){
   $now = localtime time;
-  print ".";
+  #print ".";
 
   open OUT, ">tempFile" or die "Can't open file to print output";
   if($chunk=~/sample_table_begin\n(.*?)\!sample_table_end/s){$array=$1;}
@@ -243,7 +244,7 @@ foreach my $GPLref(@GPLref){
 
   my $maxLimit=10000;
 
-  $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
+  $dbh = DBI->connect("dbi:mysql:dbname=$dbname:$host:$port",$user,$passwd) or die "Cannot open connection", "$DBI::errstr" ;
   my $select = $dbh->prepare("SELECT idchip FROM chip WHERE db_platform_id = ?");
   my $insert = $dbh->prepare("INSERT INTO expressionset (idExperiment,idchip,filename,filetype,filesize,filecontent) VALUES (?,?,?,?,?,?)");
   my $update = $dbh->prepare("UPDATE experiment SET esetFileSize = ? WHERE idExperiment = ?");
@@ -274,27 +275,16 @@ foreach my $GPLref(@GPLref){
 }
 $dbh->disconnect;
 
-my $directory = "$dataLoc/BigMac/outputs";
+my $directory = "outputs";
 unless(-e $directory or mkdir $directory) {
         die "Unable to create $directory\n";
 }
 
-$directory =~ s/\//\\\"\/\\\"/g;
-$directory =~ s/\\\"//;
-$directory =~ s/$/\\\"/;
-
-
-if($OS eq "linux"){
-	$directory =~ s/\"//g;	#### use it when calling the script in Linux
-}else{
-	$directory =~ s/\\/\\\\/g;
-}
-
-
 foreach my $file(@headers){
-	$file=$file."*";
-	`mv $file $directory`;
+    my @files=glob ($file."*"); ## get the list of files
+	move("$_", "$directory/$_") for @files;
 }
-`mv interim tempFile tOutput samples gpl* esetset* $directory`;
+my @files=("interim","tempFile","tOutput","samples",glob ("gpl*"), glob ("esetset*"));
+move("$_","$directory/$_") for @files;
 
 `rm -rf $directory`;
