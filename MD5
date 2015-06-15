@@ -1,4 +1,4 @@
-ae4686a48fa4c3925fcb6a153a387685 *DESCRIPTION
+a9edaf3288954a95c1d58c4fd89bed30 *DESCRIPTION
 9edcbdb2daee43fa5da3f2328a5d40b5 *INSTALL
 0e40d99f4e9bc73840cc6b495b9d1150 *NAMESPACE
 d54d222269c92a596367a22aa20fede1 *R/GDSforGSE.R
@@ -15,7 +15,7 @@ a2fac44842b6724500af0f71351eecdb *R/patternCheck.R
 29098025c680fc4f975bac001d87eba8 *R/removeGSE.R
 7cc4731e779129649401380f8aa2d67f *R/tagExperiment.R
 40ca2fe058841f2b52a3a97f6e1572f3 *R/updatePhenoData.R
-7e02e98021fa98b6712ca0298c616d7d *inst/doc/compendiumdb.pdf
+8897954a9c6e780ed9ef79f6131551c5 *inst/doc/compendiumdb.pdf
 6bd7340059be9eec35a0338ffeb80f1a *inst/doc/index.html
 a72fdee1af19e6abfe6abfe69369b4ba *inst/extdata/compendiumOrganismTable.txt
 efff3d8e783687d0416d74a609358f68 *inst/extdata/compendiumSchema.sql
@@ -31,7 +31,7 @@ dc17e0134f367ba6f217d491ceef8c0c *inst/scripts/Perl/loadGDS.pl
 2f98748e9051046ed7436c49812aba95 *inst/scripts/Perl/loadGPL.pl
 e4d9f5e03abef19ded445236f1b3223d *inst/scripts/Perl/loadGSMeset.pl
 941dadb7e42461c66d4d52c49d5c08e8 *inst/scripts/Perl/load_notGDS.pl
-d1c50fd253d9a19f1f5648451c2b8569 *inst/scripts/Perl/parsingSoftFile_forESET.pl
+cae2bb1040aac347e39c8a6c6a99a1bd *inst/scripts/Perl/parsingSoftFile_forESET.pl
 66a5e1b29a47142b093c811bfd76e802 *inst/scripts/Perl/transpose.pl
 1b93a9f76920e9527b72505c4f26e48f *inst/scripts/R/downloadSoftFile.R
 0cfd8f7c03f9845bae134aefe008422f *inst/scripts/R/esetGeneration.R

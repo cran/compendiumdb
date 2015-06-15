@@ -7,6 +7,7 @@ use strict;
 use Cwd;
 use LWP::Simple;
 use File::Copy;
+use File::Path 'rmtree';
 use DBI;
 use POSIX qw(strftime);
 
@@ -175,7 +176,7 @@ foreach my $GPLref(@GPLref){
     $cmd =~ s/\\//g;
     system($cmd);
   }else{
-    system(`cp -rf gpl.annot gplnew.annotation`)
+      move("gpl.annot","gplnew.annotation");
   }
 
   print "Calculating data row count of each sample with $GPLref ... $now\n";
@@ -223,11 +224,11 @@ foreach my $GPLref(@GPLref){
     print "$str ... ";
     my $str="set"."$part";
     if(scalar(@uniqRowCount) > 1 && $part == scalar(@uniqRowCount)){
-      my $cmd="Rscript $rfile *$str $no $cols $part";
+      my $cmd="Rscript --no-environ --no-site-file $rfile *$str $no $cols $part";
       $cmd =~ s/\\//g;
       $err=`$cmd`;
     }else{
-      my $cmd="Rscript $rfile *$str $no $cols 0";
+      my $cmd="Rscript --no-environ --no-site-file $rfile *$str $no $cols 0";
       $cmd =~ s/\\//g;
       $err=`$cmd`;
     }
@@ -287,4 +288,4 @@ foreach my $file(@headers){
 my @files=("interim","tempFile","tOutput","samples",glob ("gpl*"), glob ("esetset*"));
 move("$_","$directory/$_") for @files;
 
-`rm -rf $directory`;
+rmtree([$directory]);
