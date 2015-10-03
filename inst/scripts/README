@@ -21,7 +21,7 @@ their functionality as follows:
 	deleteAllforGPL.pl
 	deleteAllforGSE.pl
 	expDesign.pl
-        fetchESET.pl
+     fetchESET.pl
 	load_notGDS.pl
 	loadAllforGSEeset.pl
 	loadGDS.pl

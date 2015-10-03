@@ -1,5 +1,6 @@
 export(
 connectDatabase,
+checkUpdates,
 createESET,
 downloadGEOdata,
 GDSforGSE,
@@ -13,3 +14,5 @@ tagExperiment,
 updatePhenoData
 )
 import(Biobase,GEOquery,RMySQL)
+importFrom("methods","new")
+importFrom("utils","read.delim")

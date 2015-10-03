@@ -94,22 +94,26 @@ function (con, GSEid, GPLid = "", parsing = TRUE)
           phenoD <- new("AnnotatedDataFrame",data=phenoD)
           phenoData(compendiumESet[[i]])=phenoD
           annotation(compendiumESet[[i]])=GPLid
+	   name <- paste("eset",GSEid,"_",GPLid,"_",expDesign,i,sep="")
+	   esets[name]<-compendiumESet[[i]]
         }
       }else{
         phenoData <- as.data.frame(phenoData, row.names = NULL, optional = FALSE)
         phenoData <- new("AnnotatedDataFrame",data=phenoData)
         phenoData(compendiumESet) <- phenoData
         annotation(compendiumESet) <- GPLid
+	 name <- paste("eset",GSEid,"_",GPLid,"_",expDesign,sep="")
+	 esets[name]<-compendiumESet
       }
 
-	name <- paste("eset",GSEid,"_",GPLid,"_",expDesign,sep="")
-	esets[name]<-compendiumESet
+	
 
     }else{
       stop(paste("Platform record ",GPLid," has been not loaded in the compendium database for ",GSEid,"\n",sep=""))
       flag <- 0
     }
     if(flag){esets}
+
   }
 }
 

@@ -1,6 +1,6 @@
 INSTALLING PERL AND RELATED MODULES TO USE compendiumdb
-April 13, 2015
-NOTE: This file has been copied and adapted from the INSTALL file provied with the 
+October 1, 2015
+NOTE: This file has been copied and adapted from the INSTALL file provided with the 
  WriteXLS package. Any mistakes are ours and not the responsibility of the 
  maintainers of the WriteXLS package.
 
@@ -14,7 +14,8 @@ BASIC REQUIREMENTS
   Date::Manip
   DBD::mysql
   DBI
-  File::Copy;
+  File::Copy
+  File::Path
   LWP::Simple 
   LWP::UserAgent
   Net::FTP
@@ -26,7 +27,7 @@ As of this writing, the current release version of Perl is 5.20, however not all
 systems are using this version. Some will be using 5.18, 5.16, 5.14, 5.12 or even earlier
 distributions of Perl.
 
-Cwd, File::Copy and Net::FTP are (part of) "Core" Perl modules and should be part of a 
+Cwd, File::Copy, File::Path, Net::FTP and POSIX are (part of) "Core" Perl modules and should be part of a 
 standard Perl installation.
 
 The other modules may or may not be installed. Thus, in most cases, all you should have to 

@@ -35,7 +35,7 @@ createESET(con, GSEid, GPLid = "", parsing = TRUE)
   This function generates one or more ExpressionSets for the
   specified GSE from the data loaded in the compendium database. Each
   \code{ExpressionSet} contains an \code{assayData} slot with
-  all data related to the expression measurements parsed from GSE SOFT
+  all data related to the expression measurements parsed from a GSE SOFT
   file. Probe annotation is provided in the \code{featureData} slot with
   all data parsed from the most recent annotation file provided for
   the corresponding GPL (if available at

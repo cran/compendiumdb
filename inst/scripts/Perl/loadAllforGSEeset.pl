@@ -108,9 +108,13 @@ my $sth_get_phenoInformation = $dbh->prepare("SELECT * FROM hyb_has_description 
 							IN(SELECT hyb.hybid FROM hyb inner join experiment_has_hyb eh on hyb.hybid=eh.hybid
 							WHERE eh.idExperiment=?)");
 
-my $sth_ins_exp = $dbh->prepare("insert into experiment (expname,expdescr,addeddate,date_loaded) VALUES (?,?,?,?)");
+my $sth_ins_exp = $dbh->prepare("insert into experiment (expname,expdescr,addeddate,submissiondate,publicdate,lastupdatedate,date_loaded,pubmedid) VALUES (?,?,?,?,?,?,?,?)");
 
-my $cpml= "";
+my $cpml = ""; 
+my $subDate = "";
+my $publicDate = "";
+my $updateDate = "";
+my @pubmedID;
 my @gsm;
 my @gpl;
 my $dataCheck;
@@ -120,9 +124,14 @@ while(my $regel=<GSE>)
 {
 	if($regel=~/\!Series_sample_id = (.*?)[\r|\n]/){push @gsm,$1;}
         elsif($regel=~/\!Series_platform_id = (.*?)[\r|\n]/){push @gpl,$1;}
+        elsif($regel=~/\!Series_status = Public on (.*?)[\r|\n]/){$publicDate=$1;}
+        elsif($regel=~/\!Series_submission_date = (.*?)[\r|\n]/){$subDate=$1;}
+        elsif($regel=~/\!Series_last_update_date = (.*?)[\r|\n]/){$updateDate=$1;}
+        elsif($regel=~/\!Series_pubmed_id = (.*?)[\r|\n]/){push @pubmedID,$1;}
         else{$cpml=$cpml.$regel;}
 }
 close GSE ;
+my $pubid=join(",",@pubmedID);
 
 print "Number of samples: ". scalar(@gsm)."\n";
 
@@ -151,7 +160,7 @@ warn "$gse has already been loaded\n";
 }
 else{
         my $ldate = strftime "%Y-%m-%d", localtime;
-        $sth_ins_exp->execute($gse,$sum,$ldate,$datetime) or die "Died: ".$sth_ins_exp->errstr."\n";
+        $sth_ins_exp->execute($gse,$sum,$ldate,$subDate,$publicDate,$updateDate,$datetime,$pubid) or die "Died: ".$sth_ins_exp->errstr."\n";
         $expid = $dbh->{'mysql_insertid'};
 	my $now = localtime time;
 	print "Loading $gse starts at $now\n";
