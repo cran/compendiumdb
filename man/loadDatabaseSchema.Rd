@@ -23,7 +23,7 @@
   database schema provided with the package is loaded.}
 }
 \details{
-  See \url{http://www.bioinformaticslaboratory.nl/foswiki/bin/view/BioLab/CompendiumDB}
+  See \url{http://wiki.bioinformaticslaboratory.nl/foswiki/bin/view/BioLab/CompendiumDB}
   for a detailed description of the database schema.
 }
 \author{

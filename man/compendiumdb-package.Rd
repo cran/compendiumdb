@@ -21,8 +21,8 @@ Tools for Retrieval and Storage of Functional Genomics Data}
 \tabular{ll}{
 Package: \tab compendiumdb\cr
 Type: \tab Package\cr
-Version: \tab 1.0.2\cr
-Date: \tab 2015-10-02\cr
+Version: \tab 1.0.3\cr
+Date: \tab 2015-10-12\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }

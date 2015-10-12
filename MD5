@@ -1,5 +1,5 @@
-abdea5cba80278290041d3fea705ecb9 *DESCRIPTION
-cc425938871b2cb989ef1a862743e96d *INSTALL
+ae51a7b04daec5adf65a511d27923cd6 *DESCRIPTION
+9d4cee260b6abe25952ee251f4fefa32 *INSTALL
 d4395df2f6b643ddbb12c4014fbcd47d *NAMESPACE
 d54d222269c92a596367a22aa20fede1 *R/GDSforGSE.R
 9f2bef7d09b1254998552a56daa5786b *R/GSEforGPL.R
@@ -16,7 +16,7 @@ a2fac44842b6724500af0f71351eecdb *R/patternCheck.R
 29098025c680fc4f975bac001d87eba8 *R/removeGSE.R
 7cc4731e779129649401380f8aa2d67f *R/tagExperiment.R
 40ca2fe058841f2b52a3a97f6e1572f3 *R/updatePhenoData.R
-f9e74605dcf5cb3e498e56af6537dd15 *inst/doc/compendiumdb.pdf
+8151c8c6c20b5306a165a9b779a4d2f7 *inst/doc/compendiumdb.pdf
 6bd7340059be9eec35a0338ffeb80f1a *inst/doc/index.html
 a72fdee1af19e6abfe6abfe69369b4ba *inst/extdata/compendiumOrganismTable.txt
 ba89c4dc069c2c67128fbbc5ca97d87d *inst/extdata/compendiumSchema.sql
@@ -43,12 +43,12 @@ e069dc41d21702c4b48bbe3617750c54 *man/GSEforGPL.Rd
 2a0130cc6185d207fe159ab2baccd122 *man/GSEinDB.Rd
 8f6e52feb79b5dd1b9ef7d7b5eb596f6 *man/GSMdescriptions.Rd
 77656c9db50a8383fd0221395a491a99 *man/checkUpdates.Rd
-24c4d75676716ea9a6d8867925988aa8 *man/compendiumdb-package.Rd
+242e7fa0a28b3f1a9a494e5271b989de *man/compendiumdb-package.Rd
 ee97cb6b9282addae97a6e18d86b14d3 *man/connectDatabase.Rd
 dd9bcfdf0f8626e4cf900864c00865b8 *man/createESET.Rd
-1f7e22083a8740e1641a3c304262ef77 *man/downloadGEOdata.Rd
+9cd0ac94d1b2e8e6f2b9d611a8c1c0a2 *man/downloadGEOdata.Rd
 40949a17e53ec139fbe426a74cba2aad *man/loadDataToCompendium.Rd
-645753829c34a955a673f08a9ac46f63 *man/loadDatabaseSchema.Rd
+222edab094583815b272c11bed1cdfb0 *man/loadDatabaseSchema.Rd
 e900c3b12766565c1234e0e6a6d69149 *man/removeGSE.Rd
 2cde89bec585af6cf231d437b20b4c1c *man/tagExperiment.Rd
 a26c3c3c063be30e9ff4f180cd3dd52d *man/updatePhenoData.Rd

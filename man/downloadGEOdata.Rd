@@ -37,7 +37,7 @@ downloadGEOdata(GSEid, destdir = getwd())
   the downloaded \code{.soft} files corresponding to GSEs, GSMs, GPLs,
   and GDSs downloaded from GEO. More information about the structure of
   the \code{BigMac} directory can be found at
-  \url{http://www.bioinformaticslaboratory.nl/foswiki/bin/view/BioLab/CompendiumDB}.
+  \url{http://wiki.bioinformaticslaboratory.nl/foswiki/bin/view/BioLab/CompendiumDB}.
   If an existing BigMac directory is detected that already contains the necessary
   SOFT files, these files will not be downloaded from GEO again.
 }
